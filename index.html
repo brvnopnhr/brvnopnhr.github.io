@@ -6,7 +6,7 @@
 
        <title>Resume - Bruno Pinheiro</title>
        <link rel="stylesheet" href="style.css">
-       <link rel="icon" href="img/favicon.ico">
+       <link rel="icon" href="img/favicon.png">
 
        <!-- Bootstrap -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,32 +15,38 @@
 
   <body>
     <div class="container">
-      <h1>Bruno Pinheiro</h1>
-      <!-- navigation bar-->
 
-      <ul class="nav ">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Github Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Interests</a>
-        </li>
-      </ul>
+      <div class="header tab-content">
+        <h1>Bruno Pinheiro</h1>
+        <!-- navigation bar-->
+        <ul class="nav nav-tabs">
+          <li class="active nav-item">
+            <a class="nav-link" data-toggle="tab" href="#education">Education</a>
+          </li>
+
+          <li class="active nav-item">
+            <a class="nav-link" data-toggle="tab" href="#experience">Experience</a>
+          </li>
+
+          <li class="active nav-item">
+            <a class="nav-link" data-toggle="tab" href="#skills">Skills</a>
+          </li>
+
+          <li class="active nav-item">
+            <a class="nav-link" data-toggle="tab" href="#projects">Projects</a>
+           </li>
+
+          <li class="active nav-item">
+            <a class="nav-link" data-toggle="tab" href="#interests">Interests</a>
+          </li>
+        </ul>
       <!-- end navigation bar-->
+      </div>
 
       <div class="row">
         <!-- profile picture-->
-        <div class="col-md-4">
-          <img class="img-responsive img-circle" id="pic" src="img/profile.jpeg" alt="Photo of Bruno Pinheiro">          
+        <div class="col-md-3">
+          <img class="img-responsive rounded-circle mx-auto d-block " id="pic" src="img/profile.jpeg" alt="Photo of Bruno Pinheiro">
         </div> <!-- end profile pictue-->
 
         <div class="col-md-8">
@@ -51,30 +57,56 @@
           </p>
           <!-- end presentation text-->
 
+          <p>You can find me on: </p>
           <!-- contact images -->
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link active" href="mailto:brunopnhro@gmail.com" target="_blank">
-                <img class="contact-image" src="img/email.png" alt="email icon"/>/brunopnhro@gmail.com
+                <img class="contact-image" src="img/email.svg" alt="email icon"/>/brunopnhro@gmail.com
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="http://github.com/brvnopnhr" target="_blank">
-                <img class="contact-image" src="img/github.png" alt="github icon"/>/brvnopnhr
+                <img class="contact-image" src="img/github.svg" alt="github icon"/>/brvnopnhr
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="https://www.linkedin.com/in/brunopnhr/" target="_blank">
-                <img class="contact-image" src="img/linkedin.png" alt="linkedin icon"/>in/brunopnhr/
+                <img class="contact-image" src="img/linkedin.svg" alt="linkedin icon"/>in/brunopnhr/
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" target="_blank">
+                <img class="contact-image" src="img/pdf.svg" alt="pdf icon"/> resume in PDF
               </a>
             </li>
           </ul> <!-- end contact images -->
+        </div>
 
-      </div>
+        <div class="tab-content col-md-10">
+          <div id="education" class="tab-pane fade in active">
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="experience" class="tab-pane fade">
+            <h3>Experience</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="skills" class="tab-pane fade">
+            <h3>Skills</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="projects" class="tab-pane fade">
+            <h3>Projects</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div id="interests" class="tab-pane fade">
+            <h3>Interests</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
 
-      </div>
     </div>
-
       <!-- Bootstrap -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
