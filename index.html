@@ -10,7 +10,7 @@
 
        <!-- Bootstrap -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">       
+       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
 
   <body>
@@ -46,7 +46,7 @@
       <div class="row">
         <!-- profile picture-->
         <div class="col-md-3">
-          <img class="img-responsive rounded-circle mx-auto d-block " id="pic" src="img/profile.jpeg" alt="Photo of Bruno Pinheiro">
+          <img class="img-responsive rounded-circle mx-auto d-block " id="pic" src="res/img/profile.jpeg" alt="Photo of Bruno Pinheiro">
         </div> <!-- end profile pictue-->
 
         <div class="col-md-8">
@@ -62,73 +62,136 @@
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link active" href="mailto:brunopnhro@gmail.com" target="_blank">
-                <img class="contact-image" src="img/email.svg" alt="email icon"/>/brunopnhro@gmail.com
+                <img class="contact-image" src="res/img/email.svg" alt="email icon"/>/brunopnhro@gmail.com
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="http://github.com/brvnopnhr" target="_blank">
-                <img class="contact-image" src="img/github.svg" alt="github icon"/>/brvnopnhr
+                <img class="contact-image" src="res/img/github.svg" alt="github icon"/>/brvnopnhr
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="https://www.linkedin.com/in/brunopnhr/" target="_blank">
-                <img class="contact-image" src="img/linkedin.svg" alt="linkedin icon"/>in/brunopnhr/
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#" target="_blank">
-                <img class="contact-image" src="img/pdf.svg" alt="pdf icon"/> resume in PDF
+                <img class="contact-image" src="res/img/linkedin.svg" alt="linkedin icon"/>in/brunopnhr/
               </a>
             </li>
           </ul> <!-- end contact images -->
+
+          <!-- dropdown resume in pdf-->
+          <div class="dropdown align-center">
+              <button class="btn btn-default dropdown-toggle" type="button" id="resume-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="contact-image" src="res/img/pdf.svg" alt="pdf icon"/> resume in PDF
+                <span class="caret"></span>
+              </button>
+              <div>
+                <ul class="dropdown-menu" aria-labelledby="resume-menu">
+                  <li><a href="res/pdf/english.pdf" target="_blank">English</a></li>
+                  <li><a href="res/pdf/portuguese.pdf" target="_blank">Portuguese</a></li>
+                </ul>
+              </div>
+          </div>
+          <!-- end dropdown resume in pdf-->
         </div>
 
         <!-- contents -->
         <div class="tab-content col-md-12 content">
 
           <div id="education" class="col-md-10 tab-pane fade content">
-            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
             <h3 class="item">Education</h3>
             <div class="item-text">
               <ul>
+                <h4>Undergraduate Degree</h4>
                 <li>
-                  Information Systems - UFAM
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </li>
-                <li>
-                  Computer Science - UFAM
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p><strong>Information Systems - UFAM</strong> <br>
+                    Student in the 5th semester of the bachelor's degree.
+                  </p>
                 </li>
               </ul>
-
             </div>
           </div>
 
           <div id="experience" class="col-md-10 tab-pane fade content">
             <h3 class="item">Experience</h3>
-            <div class="item-text col-md-10">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="item-text">
+              <ul>
+                <h4>Voluntary</h4>
+                <li>
+                  <p>
+                    Project Simple H-Index Estimation (SHINE - UFAM)
+                  </p>
+                </li>
+              </ul>
+
+              <h4>Intern</h4>
+              <p><strong>LG CNS / Entrue Brasil Serviços de TI</strong> <br>
+                <ul>
+                  <li>Active directory and internal policy management</li>
+                  <li>Information Security checklist on Unix and Windows Servers</li>
+                  <li>Helpdesk</li>
+                </ul>
+              </p>
+
+              <h4>Developer and Tester</h4>
+              <p><strong>Graduate Management System, IComp UFAM</strong> <br>
+                <ul>
+                  <li>Interview and elicitation of requirements with the client</li>
+                  <li>I worked as a developer in 3 sprints and as a tester in 2 sprints</li>
+                  <li>Version control using Git and documentation</li>
+                  <li>Technologies used: YII, PHP, JavaScript, HTML, CSS</li>
+                  <li> Available in this <a href="http://github.com/psbarros/sysicomp"><em>repository</em></a></li>
+                </ul>
+              </p>
             </div>
-          </div>
+
+            </div>
 
           <div id="skills" class="col-md-10 tab-pane fade content">
-            <h3 class="item  ">Skills</h3>
-            <div class="item-text   col-md-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3 class="item ">Skills</h3>
+            <div class="item-text">
+              <h4>Courses, books, forums, etc.</h4>
+              <li>
+                  <ul>
+                    <li>Web Development (PHP, JavaScript, HTML, CSS)</li>
+                    <li>Relational database and SQL</li>
+                    <li>OO Programming</li>
+                    <li>Structured programming with C/C++</li>
+                    <li>Frameworks: Laravel, Yii</li>
+                    <li>MVC, Git, Composer</li>
+                  </ul>
+              </li>
             </div>
           </div>
 
           <div id="projects" class="col-md-10 tab-pane fade content">
             <h3 class="item  ">Projects</h3>
-            <div class="item-text   col-md-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="item-text">
+              <p>If you want snooping around my code, it's all on GitHub :)</p>
+              <ul>
+                <li>
+                  <h5>E-commerce</h5>
+                    <p>
+                      Project developed in the context of the HCode PHP7 course. <br>
+                      <a href="https://github.com/brvnopnhr/projeto-ecommerce" target="_blank"><em>Link to repository</em></a>
+                    </p>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div id="interests" class="col-md-10 tab-pane fade content">
             <h3 class="item  ">Interests</h3>
-            <div class="item-text   col-md-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="item-text ">
+              <h4>Study Plan</h4>
+                <li>
+                    <ul>
+                      <li>Consolidate knowledge in JavaScript and PHP</li>
+                      <li>Front-end frameworks (Vue or Angular)</li>
+                      <li>Tests and TDD</li>
+                      <li>Contribute to open source projects</li>
+                    </ul>
+                </p>
+                </li>
             </div>
           </div>
         </div> <!-- contents -->

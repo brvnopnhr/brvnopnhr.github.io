@@ -48,13 +48,27 @@
   border-bottom: solid 3px #575BB3;
 }
 
-h5{
-  text-align: right;
-  padding-top: 25%;
+.item-text{
+  color: #000 !important;
+  margin-top: 20px;
+}
+
+.dropdown{
+  text-align:center;
+}
+
+.btn-default{
+  background: #FFF;
+}
+
+
+h1, h3, h5{
+  font-family: Arial, sans-serif !important;
 }
 
 body{
-  font: 16px Helvetica, Sans-Serif !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
   background-color:#F5F5F5 !important;
 }
 
@@ -73,6 +87,7 @@ body{
 .nav-tabs> li.active > a{
   background-color: #F5F5F5 !important;
 }
+
 #page-wrap{
   width: 800px;
   margin: 40px auto 60px;
