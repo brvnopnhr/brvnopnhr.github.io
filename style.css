@@ -53,6 +53,13 @@
   margin-top: 20px;
 }
 
+.experience-date{
+  color: #000 !important;
+  position: relative;
+  float: right;
+  font-style: italic;
+  border-bottom: solid 1px #575BB3
+}
 .dropdown{
   text-align:center;
 }
