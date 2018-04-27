@@ -1,204 +1,125 @@
 <!DOCTYPE html>
-<html>
-  <head>
-       <meta charset="utf-8" http-equiv="Content-Type" content="text/html"/>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bruno Pinheiro</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-       <title>Resume - Bruno Pinheiro</title>
-       <link rel="stylesheet" href="style.css">
-       <link rel="icon" href="img/favicon.png">
-
-       <!-- Bootstrap -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
-
-  <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./scripts.js" charset="utf-8"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+  <div class="navbar navbar-default navbar-fixed-top dark">
     <div class="container">
-
-      <div class="header tab-content">
-        <h1>Bruno Pinheiro</h1>
-        <!-- navigation bar-->
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#education">Education</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#experience">Experience</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#skills">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#projects">Projects</a>
-           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#interests">Interests</a>
-          </li>
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><i class="fa fa-code" aria-hidden="true"></i> brvnopnhr</a>
+        <!-- after -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#about">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-        <!-- end navigation bar-->
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-2 col-sm-3">
+          <img src="res/img/profile.jpeg" alt="brvnopnhr" class="img-responsive img-circle">
+        </div>
+        <div class="col-xs-12 col-md-6 col-sm-9">
+          <h2>Hello, I'm Bruno</h2>
+          <h3>I live in Manaus, Brazil. I'm almost finishing my undergraduate degree in Software Engineering by the Federal University of Amazonas </h3>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Resume
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="res/pdf/portuguese.pdf" target="_blank">Portuguese</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="res/pdf/english.pdf" target="_blank">English</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container portfolio" id="portfolio">
+    <h2><i class="fa fa-code" aria-hidden="true"></i> Portfolio</h2>
+    <p>If you want snooping around my code, it's all on GitHub :) </p>
+    <div class="row">
+      <div class="col-md-4 portfolio-item">
+        <a href="http://github.com/brvnopnhr/flexpeak-desafio" target="_blank">
+          <img src="res/img/yii2-framework.jpg" alt="" class="img-responsive">
+          <p>Yii2 CRUD + Web Services</p>
+        </a>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="http://github.com/brvnopnhr/projeto-ecommerce" target="_blank">
+          <img src="res/img/php-ecommercetiny.png" alt="" class="img-responsive">
+          <p>PHP E-commerce</p>
+        </a>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="http://github.com/psbarros/sysicomp" target="_blank">
+          <img src="res/img/icomp2.png" alt="" class="img-responsive">
+        </a>
+        <p>Icomp UFAM - Graduate Management</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="https://github.com/brvnopnhr?utf8=%E2%9C%93&tab=repositories&q=studies&type=&language=" target="_blank">
+          <img src="res/img/studies.jpg" alt="" class="img-responsive">
+          <p>Studies repositories</p>
+        </a>
       </div>
 
-      <div class="row">
-        <!-- profile picture-->
-        <div class="col-md-3">
-          <img class="img-responsive rounded-circle mx-auto d-block " id="pic" src="res/img/profile.jpeg" alt="Photo of Bruno Pinheiro">
-        </div> <!-- end profile pictue-->
-
-        <div class="col-md-8">
-          <!-- presentation text-->
-          <p>
-            Hello, I'm Bruno Pinheiro and I want to become a software developer :)
-          </p>
-          <p>
-            I live in Manaus, Brazil. I'm almost finishing my undergraduate degree in Information Systems by the Federal University of Amazonas.
-          </p>
-          <!-- end presentation text-->
-
-          <p>You can find me on: </p>
-          <!-- contact images -->
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="mailto:brunopnhro@gmail.com" target="_blank">
-                <img class="contact-image" src="res/img/email.svg" alt="email icon"/>/brunopnhro@gmail.com
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="http://github.com/brvnopnhr" target="_blank">
-                <img class="contact-image" src="res/img/github.svg" alt="github icon"/>/brvnopnhr
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="https://www.linkedin.com/in/brunopnhr/" target="_blank">
-                <img class="contact-image" src="res/img/linkedin.svg" alt="linkedin icon"/>in/brunopnhr/
-              </a>
-            </li>
-          </ul> <!-- end contact images -->
-
-          <!-- dropdown resume in pdf-->
-          <div class="dropdown align-center">
-              <button class="btn btn-default dropdown-toggle" type="button" id="resume-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                <img class="contact-image" src="res/img/pdf.svg" alt="pdf icon"/> resume in PDF
-                <span class="caret"></span>
-              </button>
-              <div>
-                <ul class="dropdown-menu" aria-labelledby="resume-menu">
-                  <li><a href="res/pdf/english.pdf" target="_blank">English</a></li>
-                  <li><a href="res/pdf/portuguese.pdf" target="_blank">Portuguese</a></li>
-                </ul>
-              </div>
-          </div>
-          <!-- end dropdown resume in pdf-->
-        </div>
-
-        <!-- contents -->
-        <div class="tab-content col-md-12 content">
-
-          <div id="education" class="col-md-10 tab-pane fade content">
-            <h3 class="item">Education</h3>
-            <div class="item-text">
-              <ul>
-                <h4>Undergraduate Degree</h4>
-                <li>
-                  <p><strong>Information Systems - UFAM</strong> <br>
-                    Student in the 5th semester of the bachelor's degree.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="experience" class="col-md-10 tab-pane fade content">
-            <h3 class="item">Experience</h3>
-
-            <div class="item-text">
-              <ul>
-                <h4>Voluntary <span class="experience-date">Oct/16 - Dec/16</span></h4>
-                <li>
-                  <p>
-                    Project Simple H-Index Estimation (SHINE - UFAM)
-                  </p>
-                </li>
-              </ul>
-
-              <h4>Developer and Tester <span class="experience-date">Jul/17 - Dec/17</span></h4>
-              <p><strong>Graduate Management System, IComp UFAM</strong> <br>
-                <ul>
-                  <li>Interview and elicitation of requirements with the client</li>
-                  <li>I worked as a developer in 3 sprints and as a tester in 2 sprints</li>
-                  <li>Version control using Git and documentation</li>
-                  <li>Technologies used: YII, PHP, JavaScript, HTML, CSS</li>
-                  <li> Available in this <a href="http://github.com/psbarros/sysicomp"><em>repository</em></a></li>
-                </ul>
-              </p>
-
-              <h4>Intern <span class="experience-date">Feb/17 - Mar/18</span></h4>
-              <p><strong>LG CNS / Entrue Brasil Serviços de TI</strong> <br>
-                <ul>
-                  <li>Active directory and internal policy management</li>
-                  <li>Information Security checklist on Unix and Windows Servers</li>
-                  <li>Helpdesk</li>
-                </ul>
-              </p>
-            </div>
-
-            </div>
-
-          <div id="skills" class="col-md-10 tab-pane fade content">
-            <h3 class="item ">Skills</h3>
-            <div class="item-text">
-              <h4>Courses, books, etc.</h4>
-                <ul>
-                  <li>Web Development (PHP/C#, JavaScript, HTML, CSS)</li>
-                  <li>Relational database and SQL</li>
-                  <li>OO Programming</li>
-                  <li>Structured programming with C/C++</li>
-                  <li>Frameworks: Laravel, Yii2, ASP .NET</li>
-                  <li>MVC</li>
-                  <li>Git, Composer</li>
-                </ul>
-            </div>
-          </div>
-
-          <div id="projects" class="col-md-10 tab-pane fade content">
-            <h3 class="item  ">Projects</h3>
-            <div class="item-text">
-              <p>If you want snooping around my code, it's all on GitHub :)</p>
-              <ul>
-                <li>
-                  <h5>E-commerce</h5>
-                    <p>
-                      Project developed in the context of the HCode PHP7 course. <br>
-                      <a href="https://github.com/brvnopnhr/projeto-ecommerce" target="_blank"><em>Link to repository</em></a>
-                    </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="interests" class="col-md-10 tab-pane fade content">
-            <h3 class="item  ">Interests</h3>
-            <div class="item-text ">
-              <h4>Study Plan</h4>
-                  <ul>
-                    <li>Consolidate knowledge in JavaScript, PHP and C#</li>
-                    <li>Front-end frameworks (Vue or Angular)</li>
-                    <li>Microservices</li>
-                    <li>Tests and TDD</li>
-                    <li>Contribute to open source projects</li>
-                  </ul>
-            </div>
-          </div>
-        </div> <!-- contents -->
-
+      <!--
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=650&h=420" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=650&h=420" alt="" class="img-responsive">
+        </a>
+      </div> -->
     </div>
-      <!-- Bootstrap -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <div class="jumbotron contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h2><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</h2>
+           <p>You can find me on <a href="mailto:brunopnhro@gmail.com">brunopnhro@gmail.com</a> </p>
+          <p><strong>And also in:</strong></p>
+          <ul class="list-inline social">
+            <li><a href="http://github.com/brvnopnhr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/brunopnhr/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.freecodecamp.org/brvnopnhr" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/brvnopnhr" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>

@@ -1,107 +1,74 @@
-*{ margin: 0;
-   padding: 0;
- }
+body {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #292B2C;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-/*xs < 768*/
-@media screen and(max-width: 767px){
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  p, .jumbotron p {
+    color: #353E3F;
+    font-size: 16px;
+  }
 
-}
+  a {
+    color: #666aba;
+  }
 
-/*sm*/
-@media screen and(min-width: 768px){
+  h2 i {
+    color: #666aba;
+  }
 
-}
+  a:hover, a:focus {
+    color: #666aba  ;
+    text-decoration: none;
+  }
+  .navbar.dark {
+    color: #fff;
+    background-color: #292B2C;
+    border: 0px;
+  }
+  .navbar-collapse {
+    border: 0px;
+  }
+  .navbar.dark a {
+    color: #fff;
+  }
+  .navbar.dark .active a,
+  .navbar.dark .active a:hover,
+  .navbar.dark .active a:focus {
+    color: #fff;
+    background-color: #666aba;
+  }
+  .navbar.dark ul li a:hover,
+  .navbar.dark ul li a:focus {
+    color: #fff;
+  }
+  .jumbotron {
+    margin-bottom: 0px;
+    background-color: #F1F2F2;
+  }
+  .container.portfolio {
+    padding-bottom: 35px;
+  }
+  .container.portfolio .portfolio-item{
+    margin-top: 15px;
+  }
+  .jumbotron.contact {
+    padding: 15px 0px;
+    background-color: #292B2C;
+    color: #fff;
+  }
+  .jumbotron.contact p{
+    color: #F1F2F2;
+  }
 
-/*sm*/
-@media screen and(min-width: 992px){
-
-}
-
-/*lg*/
-@media screen and(min-width: 1200px){
-
-}
-.debug{
-   border: 1px solid black;
- }
-
-.header{
-   margin: 40px;
-   padding-top: 20px;
-}
-
-.content{
-  margin: 0 auto;
-}
-
-.contact-image{
-    width: 30px;
-   padding: 2px;
-}
-
-.container{
-  background-color: #FFF ;
-}
-
-.item{
-  margin-top: 20px;
-  border-bottom: solid 3px #575BB3;
-}
-
-.item-text{
-  color: #000 !important;
-  margin-top: 20px;
-}
-
-.experience-date{
-  color: #000 !important;
-  position: relative;
-  float: right;
-  font-style: italic;
-  border-bottom: solid 1px #575BB3
-}
-.dropdown{
-  text-align:center;
-}
-
-.btn-default{
-  background: #FFF;
-}
-
-
-h1, h3, h5{
-  font-family: Arial, sans-serif !important;
-}
-
-body{
-  font-family: Arial, sans-serif !important;
-  font-size: 16px !important;
-  background-color:#F5F5F5 !important;
-}
-
-.nav-tabs>li.active>a, a{
-  color:#000 !important;
-}
-
-.active>a:hover, a:hover{
-  color: #FE2E2E !important;
-}
-
-.nav-tabs>li.active{
-  background-color: #black !important;
-}
-
-.nav-tabs> li.active > a{
-  background-color: #F5F5F5 !important;
-}
-
-#page-wrap{
-  width: 800px;
-  margin: 40px auto 60px;
-}
-
-#pic{
-  margin-top: 8px;
-  width: 200px;
-  border-radius: 50%;
-}
+  .list-inline.social li{
+    font-size: 25px;
+  }
