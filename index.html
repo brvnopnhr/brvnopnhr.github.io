@@ -1,849 +1,1232 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript">
+var siteurl='/site/';
+var tmplurl='/site/templates/ja_university/';
+var isRTL = false;
+</script>
 
-	<title>Sample Website</title>
+  <base href="http://icomp.ufam.edu.br/site/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Joomla 2.5 template, Joomla education template, template for education, Joomla university template, joomla template for education, Joomla template" />
+  <meta name="description" content="Joomla template for education purpose from JoomlArt - JA University. This template is compatible with the latest version of T3 and supports K2 component." />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>IComp - Instituto de Computação</title>
+  <link href="http://icomp.ufam.edu.br/site/index.php" rel="canonical" />
+  <link href="/site/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/site/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link rel="stylesheet" href="/site/." type="text/css" />
+  <link rel="stylesheet" href="/site/modules/mod_jasidenews/assets/style.css" type="text/css" />
+  <link rel="stylesheet" href="/site/modules/mod_jaslideshowlite/assets/animate.css" type="text/css" />
+  <link rel="stylesheet" href="/site/modules/mod_jaslideshowlite/assets/mod_jaslideshowlite-fade.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/addons.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/template.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/usertools.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/css3.css" type="text/css" />
+  <link rel="stylesheet" href="/site/plugins/system/jat3/jat3/base-themes/default/css/menu/mega.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/typo.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/template.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/layout-mobile.css" type="text/css" media="only screen and (max-width:719px)" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/layout-mobile-port.css" type="text/css" media="only screen and (max-width:479px)" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/layout-tablet.css" type="text/css" media="only screen and (min-width:720px) and (max-width: 985px)" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/menu/mega.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/mod_jacontentslider.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/mod_jasidenews.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/css/mod_jaslideshowlite.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/themes/teal/css/template.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/themes/teal/css/menu/mega.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/themes/teal/css/mod_jacontentslider.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/themes/teal/css/mod_jasidenews.css" type="text/css" />
+  <link rel="stylesheet" href="/site/templates/ja_university/themes/teal/css/mod_jaslideshowlite.css" type="text/css" />
+  <script src="/site/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/site/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/site/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/site/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/site/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/site/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/site/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/site/plugins/system/jat3/jat3/base-themes/default/js/core.js" type="text/javascript"></script>
+  <script src="/site/templates/ja_university/js/menu/mega.js" type="text/javascript"></script>
+  <script src="/site/modules/mod_jacontentslider/assets/js/ja_contentslider.js" type="text/javascript"></script>
+  <script src="/site/modules/mod_jaslideshowlite/assets/script.js" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
+});
+  </script>
 
-	<!-- build:css assets/css/estilos.css -->
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/base.css">
-	<link rel="stylesheet" href="assets/css/colors.css">
-	<link rel="stylesheet" href="assets/css/font.css">
+<!--[if ie]><link href="/site/plugins/system/jat3/jat3/base-themes/default/css/template-ie.css" type="text/css" rel="stylesheet" /><![endif]--> 
+<!--[if ie]><link href="/site/templates/ja_university/css/template-ie.css" type="text/css" rel="stylesheet" /><![endif]--> 
+<!--[if ie 7]><link href="/site/plugins/system/jat3/jat3/base-themes/default/css/template-ie7.css" type="text/css" rel="stylesheet" /><![endif]--> 
+<!--[if ie 7]><link href="/site/templates/ja_university/css/template-ie7.css" type="text/css" rel="stylesheet" /><![endif]--> 
 
-	<link rel="stylesheet" href="assets/css/block-buttons.css">
-	<link rel="stylesheet" href="assets/css/block-categoriaCard.css">
-	<link rel="stylesheet" href="assets/css/block-conteudo.css">
-	<link rel="stylesheet" href="assets/css/block-cursoCard.css">
-	<link rel="stylesheet" href="assets/css/block-depoimentos.css">
-	<link rel="stylesheet" href="assets/css/block-elasticMedia.css">
-	<link rel="stylesheet" href="assets/css/block-footer-listaCursos.css">
-	<link rel="stylesheet" href="assets/css/block-footer.css">
-	<link rel="stylesheet" href="assets/css/block-form-erro.css">
-	<link rel="stylesheet" href="assets/css/block-header-busca.css">
-	<link rel="stylesheet" href="assets/css/block-header.css">
-	<link rel="stylesheet" href="assets/css/block-highlighted.css">
-	<link rel="stylesheet" href="assets/css/block-painelPlanos.css">
-	<link rel="stylesheet" href="assets/css/block-titulo-destaque.css">
-	<link rel="stylesheet" href="assets/css/block-titulos.css">
 
-	<link rel="stylesheet" href="assets/css/home-aprenda.css">
-	<link rel="stylesheet" href="assets/css/home-diferenciais.css">
-	<link rel="stylesheet" href="assets/css/home-fundo.css">
-	<link rel="stylesheet" href="assets/css/home.css">
-	<!-- endbuild -->
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+<meta name="HandheldFriendly" content="true" />
 
-<div class="home-fundo">
-	
-<header class="header">
 
-	
-	<div class="container">
+
+<link href="/site/plugins/system/jat3/jat3/base-themes/default/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <style type="text/css">
+/*dynamic css*/
+
+    body.bd .main {width: 980px;}
+    body.bd #ja-wrapper {min-width: 980px;}
+</style></head>
+
+<body id="bd" class="bd fs4 com_content">
+<a name="Top" id="Top"></a>
+<div id="ja-wrapper">
+
+
+                <div id="ja-header"
+            	class="wrap ">
+                   <div class="main">
+                           <div class="main-inner1 clearfix">
+                <h1 class="logo">
+    <a href="/site/" title="Instituto de Computação da Universidade Federal do Amazonas"><span>Instituto de Computação da Universidade Federal do Amazonas</span></a>
+</h1>                </div>
+                            </div>
+                        </div>
+            <div id="ja-mainnav"
+            	class="wrap ">
+                   <div class="main">
+                           <div class="main-inner1 clearfix">
+                
+<div class="ja-megamenu clearfix" id="ja-megamenu">
+<ul class="megamenu level0"><li  class="mega first active"><a href="http://icomp.ufam.edu.br/site/"  class="mega first active" id="menu435" title="Home"><span class="menu-title">Home</span></a></li><li  class="mega haschild"><a href="/site/index.php/institucional"  class="mega haschild" id="menu499" title="Institucional"><span class="menu-title">Institucional</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="/site/index.php/institucional/sobre-icomp"  class="mega first group" id="menu517" title="Sobre o Icomp"><span class="menu-title">Sobre o Icomp</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="/site/index.php/institucional/sobre-icomp/corpo-docente"  class="mega first" id="menu533" title="Corpo Docente"><span class="menu-title">Corpo Docente</span></a></li><li  class="mega"><a href="/site/index.php/institucional/sobre-icomp/org-administrativa"  class="mega" id="menu585" title="Organização Administrativa"><span class="menu-title">Organização Administrativa</span></a></li><li  class="mega"><a href="/site/index.php/institucional/sobre-icomp/noticias"  class="mega" id="menu713" title="Notícias do IComp"><span class="menu-title">Notícias do IComp</span></a></li><li  class="mega"><a href="/site/index.php/institucional/sobre-icomp/como-chegar"  class="mega" id="menu653" title="Como chegar"><span class="menu-title">Como chegar</span></a></li><li  class="mega last"><a href="http://icomp.ufam.edu.br/numeros/" target="_blank"  class="mega last" id="menu885" title="IComp em números"><span class="menu-title">IComp em números</span></a></li></ul></div></div></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="/site/index.php/graduacao"  class="mega haschild" id="menu531" title="Graduação"><span class="menu-title">Graduação</span></a><div class="childcontent cols3 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 645px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="/site/index.php/graduacao/graduacao-cursos"  class="mega first group" id="menu648" title="Cursos de Graduação"><span class="menu-title">Cursos de Graduação</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first haschild"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc"  class="mega first haschild" id="menu495" title="Ciência da Computação"><span class="menu-title">Ciência da Computação</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level2"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/sobre-cc"  class="mega first" id="menu501" title="Informações Gerais"><span class="menu-title">Informações Gerais</span></a></li><li  class="mega haschild"><a href="#"  class="mega haschild" id="menu611" title="Matriz Curricular 2001/1"><span class="menu-title">Matriz Curricular 2001/1</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level3"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2001/cc-curriculo2001"  class="mega first" id="menu656" title="Disciplinas por período"><span class="menu-title">Disciplinas por período</span></a></li><li  class="mega last"><a href="/site/phocadownload/fluxograma_cc.pdf" target="_blank"  class="mega last" id="menu614" title="Fluxograma"><span class="menu-title">Fluxograma</span></a></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="#"  class="mega haschild" id="menu613" title="Matriz Curricular 2012/2"><span class="menu-title">Matriz Curricular 2012/2</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level3"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-curriculo2012"  class="mega first" id="menu657" title="Disciplinas por período"><span class="menu-title">Disciplinas por período</span></a></li><li  class="mega"><a href="/site/phocadownload/fluxograma_CC_matriz2012.pdf" target="_blank"  class="mega" id="menu658" title="Fluxograma"><span class="menu-title">Fluxograma</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-ppc"  class="mega" id="menu659" title="Projeto Pedagógico"><span class="menu-title">Projeto Pedagógico</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-perfis"  class="mega" id="menu660" title="Perfis de Formação"><span class="menu-title">Perfis de Formação</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-atvcomplementar"  class="mega" id="menu661" title="Atividades Complementares"><span class="menu-title">Atividades Complementares</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-equivalencias"  class="mega" id="menu662" title="Quadro de Equivalências"><span class="menu-title">Quadro de Equivalências</span></a></li><li  class="mega last haschild"><a href="#"  class="mega last haschild" id="menu663" title="Ementas de Disciplinas"><span class="menu-title">Ementas de Disciplinas</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level4"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-ementas/cc-obrigatorias"  class="mega first" id="menu664" title="Nucleo Obrigatório"><span class="menu-title">Nucleo Obrigatório</span></a></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2012/cc-ementas/cc-optativas"  class="mega last" id="menu665" title="Nucleo Optativo"><span class="menu-title">Nucleo Optativo</span></a></li></ul></div></div>
+</div></div></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="#"  class="mega haschild" id="menu855" title="Matriz Curricular 2016/1"><span class="menu-title">Matriz Curricular 2016/1</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level3"><li  class="mega first haschild"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2016/cc-curriculo2016"  class="mega first haschild" id="menu857" title="Disciplinas por período"><span class="menu-title">Disciplinas por período</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level4"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2016/cc-curriculo2016/cc-atvcomplementar-2016"  class="mega first" id="menu858" title="Atividades Complementares"><span class="menu-title">Atividades Complementares</span></a></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="/site/phocadownload/fluxograma_CC_matriz2016.pdf" target="_blank"  class="mega" id="menu856" title="Fluxograma"><span class="menu-title">Fluxograma</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2016/cc-perfis-2016"  class="mega" id="menu859" title="Perfis de Formação"><span class="menu-title">Perfis de Formação</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2016/cc-ppc"  class="mega" id="menu871" title="Projeto Pedagógico"><span class="menu-title">Projeto Pedagógico</span></a></li><li  class="mega last haschild"><a href="#"  class="mega last haschild" id="menu872" title="Ementas de Disciplinas"><span class="menu-title">Ementas de Disciplinas</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level4"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/grade-cc-2016/cc-ementas/cc-obrigatorias"  class="mega first" id="menu873" title="Nucleo Obrigatório"><span class="menu-title">Nucleo Obrigatório</span></a></li></ul></div></div>
+</div></div></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/colegiado-cc"  class="mega" id="menu597" title="Colegiado e NDE"><span class="menu-title">Colegiado e NDE</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/estagio-cc"  class="mega" id="menu598" title="Estágio Não Obrigatório"><span class="menu-title">Estágio Não Obrigatório</span></a></li><li  class="mega"><a href="http://www.icomp.ufam.edu.br/professores/passito/"  class="mega" id="menu608" title="Coordenador do Curso CC"><span class="menu-title">Coordenador do Curso CC</span></a></li><li  class="mega"><a href="/phocadownload/horario_si_2017-1.pdf" target="_blank"  class="mega" id="menu667" title="Horário de Aula"><span class="menu-title">Horário de Aula</span></a></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-cc/cc-nivelamento-2016"  class="mega last" id="menu851" title="Curso de Nivelamento do Calouro de CC 2016"><span class="menu-title">Curso de Nivelamento do Calouro de CC 2016</span></a></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es"  class="mega haschild" id="menu888" title="Engenharia de Software"><span class="menu-title">Engenharia de Software</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level2"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/sobre-es"  class="mega first" id="menu889" title="Informações Gerais"><span class="menu-title">Informações Gerais</span></a></li><li  class="mega haschild"><a href="#"  class="mega haschild" id="menu891" title="Matriz curricular"><span class="menu-title">Matriz curricular</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level3"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/grade-curricular-es/estrutura-curricular-es"  class="mega first" id="menu892" title="Disciplinas por período "><span class="menu-title">Disciplinas por período </span></a></li><li  class="mega last"><a href="/site/phocadownload/fluxograma_si.pdf" target="_blank"  class="mega last" id="menu898" title="Fluxograma"><span class="menu-title">Fluxograma</span></a></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/ac-es"  class="mega" id="menu894" title="Atividades Complementares"><span class="menu-title">Atividades Complementares</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/colegiado-es"  class="mega" id="menu895" title="Colegiado e NDE"><span class="menu-title">Colegiado e NDE</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/es-estagio"  class="mega" id="menu896" title="Estágio Supervisionado"><span class="menu-title">Estágio Supervisionado</span></a></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-es/coordenador-es"  class="mega last" id="menu897" title="Coordenador do Curso ES"><span class="menu-title">Coordenador do Curso ES</span></a></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si"  class="mega haschild" id="menu586" title="Sistemas de Informação"><span class="menu-title">Sistemas de Informação</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level2"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/sobre-si"  class="mega first" id="menu609" title="Informações Gerais"><span class="menu-title">Informações Gerais</span></a></li><li  class="mega haschild"><a href="#"  class="mega haschild" id="menu669" title="Matriz curricular"><span class="menu-title">Matriz curricular</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level3"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/grade-curricular/estrutura-curricular"  class="mega first" id="menu646" title="Disciplinas por período"><span class="menu-title">Disciplinas por período</span></a></li><li  class="mega"><a href="/site/phocadownload/fluxograma_si.pdf" target="_blank"  class="mega" id="menu647" title="Fluxograma"><span class="menu-title">Fluxograma</span></a></li><li  class="mega last haschild"><a href="#"  class="mega last haschild" id="menu670" title="Ementas de Disciplinas"><span class="menu-title">Ementas de Disciplinas</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level4"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/grade-curricular/si-ementas/si-obrigatorias"  class="mega first" id="menu707" title="Núcleo Obrigatório"><span class="menu-title">Núcleo Obrigatório</span></a></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/grade-curricular/si-ementas/si-optativas"  class="mega last" id="menu705" title="Nucleo Optativo"><span class="menu-title">Nucleo Optativo</span></a></li></ul></div></div>
+</div></div></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/ac-si"  class="mega" id="menu610" title="Atividades Complementares"><span class="menu-title">Atividades Complementares</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/colegiado-si"  class="mega" id="menu702" title="Colegiado e NDE"><span class="menu-title">Colegiado e NDE</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/si-estagio"  class="mega" id="menu655" title="Estágio Supervisionado"><span class="menu-title">Estágio Supervisionado</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-si/coordenador-si"  class="mega" id="menu666" title="Coordenador do Curso SI"><span class="menu-title">Coordenador do Curso SI</span></a></li><li  class="mega last"><a href="/site/phocadownload/horario_si_2017-1.pdf" target="_blank"  class="mega last" id="menu668" title="Horário de Aula"><span class="menu-title">Horário de Aula</span></a></li></ul></div></div>
+</div></div></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-cursos/graduacao-oferta20181"  class="mega last" id="menu890" title="Oferta de disciplinas 2018/1"><span class="menu-title">Oferta de disciplinas 2018/1</span></a></li></ul></div></div></li><li  class="mega group"><div class="group"><div class="group-title"><a href="#"  class="mega group" id="menu588" title="Normas para TCC"><span class="menu-title">Normas para TCC</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-tcc/tcc-normas"  class="mega first" id="menu649" title="Descrição e Normas"><span class="menu-title">Descrição e Normas</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-tcc/tcc-estrutura"  class="mega" id="menu650" title="Modelos de Monografia"><span class="menu-title">Modelos de Monografia</span></a></li><li  class="mega"><a href="http://biblioteca.ufam.edu.br/index.php/servicos/elaboracao-de-ficha-catalografica" target="_blank"  class="mega" id="menu651" title="Ficha Catalográfica"><span class="menu-title">Ficha Catalográfica</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-tcc/biblioteca-de-tccs"  class="mega" id="menu759" title="Biblioteca de TCCs"><span class="menu-title">Biblioteca de TCCs</span></a></li><li  class="mega last"><a href="/site/index.php/graduacao/graduacao-tcc/faq-tcc"  class="mega last" id="menu860" title="Dúvidas Frequentes (FAQ)"><span class="menu-title">Dúvidas Frequentes (FAQ)</span></a></li></ul></div></div></li></ul></div><div class="megacol column2" style="width: 200px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="#"  class="mega first group" id="menu589" title="Outros"><span class="menu-title">Outros</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="/site/index.php/graduacao/graduacao-outros/graduacao-pta"  class="mega first" id="menu706" title="Programa de Tutoria Acadêmica"><span class="menu-title">Programa de Tutoria Acadêmica</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-outros/enade"  class="mega" id="menu595" title="ENADE"><span class="menu-title">ENADE</span></a></li><li  class="mega"><a href="/site/index.php/graduacao/graduacao-outros/graduacao-ementas-externas"  class="mega" id="menu596" title="Ementas de Outros Cursos"><span class="menu-title">Ementas de Outros Cursos</span></a></li><li  class="mega last"><a href="http://proeg.ufam.edu.br/formularios"  class="mega last" id="menu654" title="Formulários"><span class="menu-title">Formulários</span></a></li></ul></div></div></li><li  class="mega group"><div class="group"><div class="group-title"><a href="#"  class="mega group" id="menu587" title="Centros Acadêmicos e PET"><span class="menu-title">Centros Acadêmicos e PET</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="https://www.facebook.com/cacicom"  class="mega first" id="menu592" title="CACI.Com"><span class="menu-title">CACI.Com</span></a></li><li  class="mega last"><a href="https://www.facebook.com/petcomputacaoufam"  class="mega last" id="menu594" title="PET Computação"><span class="menu-title">PET Computação</span></a></li></ul></div></div></li></ul></div><div class="megacol column3 last" style="width: 245px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="#"  class="mega first group" id="menu532" title="Sistemas IComp"><span class="menu-title">Sistemas IComp</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="http://sistemas.icomp.ufam.edu.br/graduacao" target="_blank"  class="mega first" id="menu671" title="Atividades Extracurriculares"><span class="menu-title">Atividades Extracurriculares</span></a></li><li  class="mega last"><a href="http://sistemas.icomp.ufam.edu.br/paps/eventic/eventic.apk" target="_blank"  class="mega last" id="menu786" title="Eventic"><span class="menu-title">Eventic</span></a></li></ul></div></div></li><li  class="mega group"><div class="group"><div class="group-content">	<div class="ja-moduletable moduletable  clearfix" id="Mod133">
+						<div class="ja-box-ct clearfix">
 		
-		<a class="header-logo" href="."> </a> 
 
-		<div class="header-navegacao">
-			<form action="/busca" class="header-navegacao-form">
-				<input class="navegacao-form-input" type="search" placeholder="Digite sua busca aqui" name="q">
-				<button class="navegacao-form-submit" type="submit">
-					<img class="header-busca-icone" src="assets/img/busca.svg">
-				</button>
-			</form>
-
-			<a href="" class="header-areaAluno">
-				Login
-			</a>
-
-			<a href="#planos" class="header-cta">
-				Matricule-se
-			</a>
+<div class="custom"  >
+	<div style="padding-top: 12px;">
+<a href="#" title="Sample banner"><img src="/site/images/sampledata/ja_university/cus-banner1.jpg" alt="Sample banner" /></a>
+</div></div>
 		</div>
-	</div>
-</header>
+    </div>
+	</div></div></li></ul></div></div>
+</div></div></li><li  class="mega haschild"><a href="http://ppgi.ufam.edu.br"  class="mega haschild" id="menu516" title="Pós-graduação"><span class="menu-title">Pós-graduação</span></a><div class="childcontent cols2 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 400px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="/site/index.php/pos-graduacao/latu-senso"  class="mega first group" id="menu900" title="Lato Sensu"><span class="menu-title">Lato Sensu</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="/site/index.php/pos-graduacao/latu-senso/poslato"  class="mega first" id="menu899" title="Especialização em Internet das Coisas"><span class="menu-title">Especialização em Internet das Coisas</span></a></li><li  class="mega haschild"><a href="/site/index.php/pos-graduacao/latu-senso/processo-seletivo"  class="mega haschild" id="menu905" title="Processo Seletivo 2018/2"><span class="menu-title">Processo Seletivo 2018/2</span></a><div class="childcontent cols1 ">
+<div class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level2"><li  class="mega first"><a href="http://icomp.ufam.edu.br/site/images/Resultado_FINAL_IOT_39_2018.pdf"  class="mega first" id="menu904" title="Homologação das inscrições "><span class="menu-title">Homologação das inscrições </span></a></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="http://icomp.ufam.edu.br/site/images/Resultado_NAD.pdf"  class="mega" id="menu908" title="Resultado Parcial da Etapa II - Análise de Documentação"><span class="menu-title">Resultado Parcial da Etapa II - Análise de Documentação</span></a></li><li  class="mega last"><a href="/site/images/Resultado_FINAL_Selecao_EDITAL_039-2018_IOT.pdf"  class="mega last" id="menu909" title="Resultado Final"><span class="menu-title">Resultado Final</span></a></li></ul></div></div></li></ul></div><div class="megacol column2 last" style="width: 200px;"><ul class="megamenu level1"><li  class="mega first group"><div class="group"><div class="group-title"><a href="http://ppgi.ufam.edu.br"  class="mega first group" id="menu901" title="Stricto Sensu"><span class="menu-title">Stricto Sensu</span></a></div><div class="group-content"><ul class="megamenu level1"><li  class="mega first"><a href="http://ppgi.ufam.edu.br"  class="mega first" id="menu902" title="Mestrado / Doutorado"><span class="menu-title">Mestrado / Doutorado</span></a></li></ul></div></div></li></ul></div></div>
+</div></div></li><li  class="mega"><a href="/site/index.php/extensao"  class="mega" id="menu494" title="Extensão"><span class="menu-title">Extensão</span></a></li><li  class="mega last"><a href="/site/index.php/contate-nos"  class="mega last" id="menu498" title="Contate-nos"><span class="menu-title">Contate-nos</span></a></li></ul>
+</div>            <script type="text/javascript">
+                var megamenu = new jaMegaMenuMoo ('ja-megamenu', {
+                    'bgopacity': 0,
+                    'delayHide': 300,
+                    'slide'    : 0,
+                    'fading'   : 1,
+                    'direction': 'down',
+                    'action'   : 'mouseover',
+                    'tips'     : false,
+                    'duration' : 300,
+                    'hidestyle': 'fastwhenshow'
+                });
+            </script>
+            <!-- jdoc:include type="menu" level="0" / -->
+
+                </div>
+                            </div>
+                        </div>
+            
 
 
-	<div class="container home-headline">
-		<h1 class="titulo-destaque">Lorem ipsum dolor sit amet!</h1>
-		<h2 class="subtitulo-destaque">Maecenas et volutpat nisi, sed aliquam arcu. Nulla vestibulum magna leo</h2>
 
-		<a href="#planos" class="buttonLight home-headline-cta">
-			Button
-		</a>	
-	</div>
-
-
-	<div class="categoriaCard-lista container">
-	<!--
-		--><a href="/cursos-online-mobile" class="categoriaCard-item bg-categoria-mobile">			
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#mobile"></svg>
-			<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Mobile
-			</h3>
-			<p class="categoriaCard-item-descricao">iOS, Android, PhoneGap, e mais…</p>
-		</a><!--
-	--><!--
-		--><a href="/cursos-online-programacao" class="categoriaCard-item bg-categoria-programacao">
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#programacao"></svg>
-				<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Programação
-			</h3>
-			<p class="categoriaCard-item-descricao">Java, C#, Ruby, PHP, Python e mais…</p>
-		</a><!--
-	--><!--
-		--><a href="/cursos-online-front-end" class="categoriaCard-item bg-categoria-front-end">
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#front-end"></svg>
-				<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Front-end
-			</h3>
-			<p class="categoriaCard-item-descricao">HTML, CSS, Angular, JavaScript e mais…</p>
-		</a><!--
-	--><!--
-		--><a href="/cursos-online-infraestrutura" class="categoriaCard-item bg-categoria-infraestrutura">
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#infraestrutura"></svg>
-				<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Infraestrutura
-			</h3>
-			<p class="categoriaCard-item-descricao">Linux, SQL, Git, Docker e mais…</p>
-		</a><!--
-	--><!--
-		--><a href="/cursos-online-design-ux" class="categoriaCard-item bg-categoria-design-ux">
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#design-ux"></svg>
-				<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Design &amp; UX
-			</h3>
-			<p class="categoriaCard-item-descricao">Photoshop, Illustrator, Usabilidade e mais…</p>
-		</a><!--
-	--><!--
-		--><a href="/cursos-online-business" class="categoriaCard-item bg-categoria-business">
-			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#business"></svg>
-			<h3 class="categoriaCard-item-nome">
-				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
-				Business
-			</h3>
-			<p class="categoriaCard-item-descricao">Agilidade, Startup, Marketing, SEO e mais…</p>
-		</a><!--
-	-->	</div>
-
-	<div class="home-fundo-container container">
-		<div class="home-fundo-inner-container">
-			<div class="home-fundo-nuvem esquerda"></div>
-			<div class="home-fundo-nuvem esquerda-grande"></div>
-			<div class="home-fundo-nuvem direita"></div>
+<ul class="no-display">
+    <li><a href="#ja-content" title="Skip to content">Skip to content</a></li>
+</ul>            <div id="ja-slideshow"
+            	class="wrap ">
+                   <div class="main clearfix">
+           
+<div id="ja-ss-103" class="ja-ss ja-ss-wrap fade"  style="visibility: hidden">
+	<div class="ja-ss-items">
+			<div class="ja-ss-item">
+			<img src="/site/images/resized/images/sampledata/slideshow/sl-1_960_400.jpg" alt="Corpo docente altamente qualificadoO IComp aposta na qualificação de seu corpo docente, formado por 35 professores, dentre os quais 34 (97%) são doutores."/>
+						<div class="ja-ss-desc"><h3>Corpo docente altamente qualificado</h3><p>O IComp aposta na qualificação de seu corpo docente, formado por 35 professores, dentre os quais 34 (97%) são doutores.</p></div>
+						<div class="ja-ss-mask mask-left">&nbsp;</div>
+			<div class="ja-ss-mask mask-right">&nbsp;</div>
 		</div>
-	</div>
-</div>
-
-<div class="home-diferenciais">
-	<div class="container">
-		<div class="home-diferenciais-video">
-			<h2 class="home-diferenciais-titulo">Aprenda, crie e desenvolva!</h2>
-			<div class="home-diferenciais-video-wrapper">
-				<div class="elasticMedia-container">
-					
-				</div>
-			</div>
+			<div class="ja-ss-item">
+			<img src="/site/images/resized/images/sampledata/slideshow/sl-2_960_400.jpg" alt="Cursos de Graduação entre os MelhoresOs cursos de Ciência da Computação e Sistemas de Informação possuem ENADE 5 e 4 respectivamente, destacando-se entre os cursos de computação em todo o Brasil."/>
+						<div class="ja-ss-desc"><h3>Cursos de Graduação entre os Melhores</h3><p>Os cursos de Ciência da Computação e Sistemas de Informação possuem ENADE 5 e 4 respectivamente, destacando-se entre os cursos de computação em todo o Brasil.</p></div>
+						<div class="ja-ss-mask mask-left">&nbsp;</div>
+			<div class="ja-ss-mask mask-right">&nbsp;</div>
 		</div>
-		<div class="home-diferenciais-list">
-
-			<div class="home-diferenciais-item">
-				<span class="home-diferenciais-icone icone-carreira"></span>
-				<div class="home-diferenciais-item-texto">
-					<h3 class="home-diferenciais-item-nome">Sua carreira em alta</h3>
-					<p class="home-diferenciais-item-descricao">Tudo que você precisa para ser um melhor profissional em tecnologia e sua carreira decolar.</p>
-				</div>
-			</div>
-
-			<div class="home-diferenciais-item">
-				<span class="home-diferenciais-icone icone-cresca"></span>
-				<div class="home-diferenciais-item-texto">
-					<h3 class="home-diferenciais-item-nome">Você aprende na prática</h3>
-					<p class="home-diferenciais-item-descricao">Você faz diversos exercícios que estimulam a aprender de verdade com projetos reais.</p>
-				</div>
-			</div>
-
-			<div class="home-diferenciais-item">
-				<span class="home-diferenciais-icone icone-impacto"></span>
-				<div class="home-diferenciais-item-texto">
-					<h3 class="home-diferenciais-item-nome">O conteúdo que você precisa</h3>
-					<p class="home-diferenciais-item-descricao">Já são 208 cursos e com novos lançamentos todos os meses, além de atualizações e melhorias constantes.</p>
-				</div>
-			</div>
+			<div class="ja-ss-item">
+			<img src="/site/images/resized/images/sampledata/slideshow/sl-3_960_400.jpg" alt="Laboratórios e Salas ModernosO IComp conta com cerca de 15 laboratórios e salas com os melhores equipamentos em computação."/>
+						<div class="ja-ss-desc"><h3>Laboratórios e Salas Modernos</h3><p>O IComp conta com cerca de 15 laboratórios e salas com os melhores equipamentos em computação.</p></div>
+						<div class="ja-ss-mask mask-left">&nbsp;</div>
+			<div class="ja-ss-mask mask-right">&nbsp;</div>
 		</div>
-	</div>
-</div>
-
-
-<div class="depoimentos">
-	<div class="container">
-		<h2 class="depoimentos-titulo">O que os nossos alunos estão falando</h2>
-		<div class="depoimentos-list">
-			<div class="depoimentos-item">
-				<div class="depoimento-item-header">
-					<img class="depoimentos-item-foto" src="assets/img/aluno-adriano.jpg">
-
-					<div class="depoimentos-item-header-nameData">
-						<h3 class="depoimentos-item-assinatura">Aluno</h3>
-						<p class="depoimentos-item-data">em 28/12/2015</p>
-					</div>
-				</div>
-
-				<p class="depoimentos-item-texto">Ótimo explicações e exemplos simples e de fácil entendimento.</p>
-				<p class="depoimentos-item-curso">
-					Sobre o curso 
-					<a class="depoimentos-item-link" href="">Java I: Primeiros passos</a>
-				</p>
-			</div>
-			<div class="depoimentos-item">
-				<div class="depoimento-item-header">
-					<img class="depoimentos-item-foto" src="assets/img/aluno-nico.jpg">
-
-					<div class="depoimentos-item-header-nameData">
-						<h3 class="depoimentos-item-assinatura">Aluno</h3>
-						<p class="depoimentos-item-data">em 01/01/2017</p>
-					</div>
-				</div>
-
-				<p class="depoimentos-item-texto">Dinâmico e com uma metodologia assertiva! Consegue passe os conceitos de uma forma fluida e objetiva.</p>
-				<p class="depoimentos-item-curso">
-					Sobre o curso 
-					<a class="depoimentos-item-link" href="">Java I: Primeiros passos</a>
-				</p>
-			</div>
-			<div class="depoimentos-item">
-				<div class="depoimento-item-header">
-					<img class="depoimentos-item-foto" src="assets/img/aluno-sergio.jpg">
-					<div class="depoimentos-item-header-nameData">
-						<h3 class="depoimentos-item-assinatura">Aluno</h3>
-						<p class="depoimentos-item-data">em 28/12/2018</p>
-					</div>
-				</div>
-
-				<p class="depoimentos-item-texto">A maior diferença que estou sentindo é que o ambiente de estudo não está me deixando meu estudo cansativo.</p>
-				<p class="depoimentos-item-curso">
-					Sobre o curso 
-					<a class="depoimentos-item-link" href="">Java I: Primeiros passos</a>
-				</p>
-			</div>
-		</div>	
-	</div>
-</div>
-
-
-<div class="highlighted">
-	<div class="container">
-		<h2 class="highlighted-title">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ipsam saepe
-		</h2>
-		<a class="buttonLight highlighted-link" href="#planos">
-			Button
-		</a>
-	</div>
-</div>
-
-<div class="home-cursos">
-	<h2 class="home-cursos-titulo container">Nossos últimos lançamentos</h2>
+			<div class="ja-ss-item">
+			<img src="/site/images/resized/images/sampledata/slideshow/sl-4_960_400.jpg" alt="Pós-graduação de excelência Nota 5O PPGI é o programa de pós-graudação em computação com maior conceito na região Norte: Nota 5 na avaliação  CAPES."/>
+						<div class="ja-ss-desc"><h3>Pós-graduação de excelência Nota 5</h3><p>O PPGI é o programa de pós-graudação em computação com maior conceito na região Norte: Nota 5 na avaliação  CAPES.</p></div>
+						<div class="ja-ss-mask mask-left">&nbsp;</div>
+			<div class="ja-ss-mask mask-right">&nbsp;</div>
+		</div>
+		</div>
 	
-<div class="cursoCard-lista container">
-	<!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-marketing-digital-canais-nao-pagos.svg" alt="Marketing digital: Introdução aos canais não pagos" class="cursoCard-icone">
-				<div class="cursoCard-nome">Marketing digital: Introdução aos canais não pagos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>3</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-marketing-digital-canais-pagos.svg" alt="Marketing Digital: Introdução aos canais pagos" class="cursoCard-icone">
-				<div class="cursoCard-nome">Marketing Digital: Introdução aos canais pagos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>7</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-jsf-primefaces.svg" alt="Java e JSF 2 - II: Componentes ricos com Primefaces" class="cursoCard-icone">
-				<div class="cursoCard-nome">Java e JSF 2 - II: Componentes ricos com Primefaces</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-jsf-cdi.svg" alt="Java e JSF 2 - III: Integração com CDI" class="cursoCard-icone">
-				<div class="cursoCard-nome">Java e JSF 2 - III: Integração com CDI</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>16</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-jpa-avancado.svg" alt="Java e JPA: Otimizações com JPA2 e Hibernate" class="cursoCard-icone">
-				<div class="cursoCard-nome">Java e JPA: Otimizações com JPA2 e Hibernate</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Avançado</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-ingles-para-entrevistas.svg" alt="Inglês: Candidate-se a vagas no exterior" class="cursoCard-icone">
-				<div class="cursoCard-nome">Inglês: Candidate-se a vagas no exterior</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>4</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-android-studio-ii-integracoes-e-recursos.svg" alt="Android II: Integração com apps e recursos do device" class="cursoCard-icone">
-				<div class="cursoCard-nome">Android II: Integração com apps e recursos do device</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>8</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img src="https://web-dot-teste-tcc-bruno.appspot.com/assets/img/curso-design-editorial.svg" alt="Design editorial: Criação de materiais gráficos " class="cursoCard-icone">
-				<div class="cursoCard-nome">Design editorial: Criação de materiais gráficos </div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>8</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--></div>
-
-
-	<h2 class="home-cursos-titulo container">Cursos mais feitos</h2>
-	
-<div class="cursoCard-lista container">
-	<!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-logica-de-programacao.svg" alt="Lógica de Programação I: comece na carreira com JavaScript" class="cursoCard-icone">
-				<div class="cursoCard-nome">Lógica de Programação I: comece na carreira com JavaScript</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-html-e-css.svg" alt="HTML e CSS: Os seus primeiros passos" class="cursoCard-icone">
-				<div class="cursoCard-nome">HTML e CSS: Os seus primeiros passos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-primeiros-passos-com-java.svg" alt="Java I: Primeiros passos" class="cursoCard-icone">
-				<div class="cursoCard-nome">Java I: Primeiros passos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-fundamentos-http.svg" alt="HTTP: Entendendo a web por baixo dos panos" class="cursoCard-icone">
-				<div class="cursoCard-nome">HTTP: Entendendo a web por baixo dos panos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>10</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-introducao-html-css.svg" alt="HTML5 e CSS3 I: Suas primeiras páginas da Web" class="cursoCard-icone">
-				<div class="cursoCard-nome">HTML5 e CSS3 I: Suas primeiras páginas da Web</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>32</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-cordova-phonegap.svg" alt="Cordova & PhoneGap: Apps mobile com HTML, CSS e JS" class="cursoCard-icone">
-				<div class="cursoCard-nome">Cordova & PhoneGap: Apps mobile com HTML, CSS e JS</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-java-e-orientacao-a-objetos.svg" alt="Java II: Orientação a Objetos" class="cursoCard-icone">
-				<div class="cursoCard-nome">Java II: Orientação a Objetos</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Básico</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--><!--
-		--><a class="cursoCard" href="">
-			<div class="cursoCard-firstRow">
-				<img data-src="assets/img/curso-angularjs-mvc.svg" alt="AngularJS: crie webapps poderosas" class="cursoCard-icone">
-				<div class="cursoCard-nome">AngularJS: crie webapps poderosas</div>
-			</div>
-			<div class="cursoCard-infos">
-				<div class="cursoCard-infos-tempoEstimado"> <p>16</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
-				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
-				<div class="cursoCard-infos-mais">+</div>
-			</div>
-		</a><!--
-	--></div>
-
-</div>
-
-<div class="highlighted">
-	<div class="container">
-		<h2 class="highlighted-title">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
-		</h2>
-		<a class="buttonLight highlighted-link" href="#planos">
-			Faça já sua matrícula
-		</a>
+			<div class="ja-ss-btns clearfix">
+		<span class="ja-ss-prev">&laquo; Previous</span>
+		<span class="ja-ss-next">Next  &raquo;</span>
 	</div>
-</div>
-
-<div class="aprenda">
-	<div class="container">
-		<h2 class="aprenda-titulo">Lorem ipsum dolor sit amet, consectetur adipiscing!</h2>
-	</div>
-</div>
-
-
-<div class="painelPlanos  painelPlanosComOnda" id="planos">
-	<div class="container">		
-		<div class="painelPlanos-planos">
-				<div class="painelPlanos-plano " data-premium>
-					<div class="painelPlanos-def">
-						<h3 class="painelPlanos-plano-titulo-wrapper">
-							<div class="painelPlanos-plano-titulo">
-								Banner #1							
-							</div>
-						</h3>
-						<span class="painelPlanos-plano-preco">
-							<span class="painelPlanos-plano-preco-parcelas">Item</span>							
-						</span>
-						
-						<a href="" class="painelPlanos-plano-botaoComprar">
-							Button
-						</a>
-					</div>
-				
-					<ul class="painelPlanos-info">
-						<li class="painelPlanos-info-comum">
-							<div class="painelPlanos-info-numero">208</div>
-							<span>Item da Lista</span>
-						</li>
-						<li class="painelPlanos-info-comum">
-							<div class="painelPlanos-info-numero">7.391</div>
-							<span>Item da Lista</span>
-						</li>
-						<li class="painelPlanos-info-item">
-							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
-							<div class="painelPlanos-info-texto">Item da Lista</div>
-						</li>
-					
-					</ul>
-				</div>
-				<div class="painelPlanos-plano" data-premiumplus>
-					<div class="painelPlanos-def">
-						<h3 class="painelPlanos-plano-titulo-wrapper">
-							<div class="painelPlanos-plano-titulo">
-								Banner #2
-							</div>
-						</h3>
-						<span class="painelPlanos-plano-preco">
-							<span class="painelPlanos-plano-preco-parcelas">Item</span>						
-						</span>
-					
-						<a href="" class="painelPlanos-plano-botaoComprar">
-							Button
-						</a>
-					</div>
-				
-					<ul class="painelPlanos-info">
-						<li class="painelPlanos-info-comum">
-							<div class="painelPlanos-info-numero">208</div>
-							<span>Item da Lista</span>
-						</li>
-						<li class="painelPlanos-info-comum">
-							<div class="painelPlanos-info-numero">7.391</div>
-							<span>Item da Lista</span>
-						</li>
-						<li class="painelPlanos-info-item">
-							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
-							<div class="painelPlanos-info-texto">Item da Lista</div>
-						</li>										
-					</ul>
-				</div>
-			</div>
-
-		<div class="painelPlanos-vantagens">
-			<div class="painelPlanos-vantagem">
-				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-acesso.svg">
-				Acesso por 1 ano
-			</div>
-			<div class="painelPlanos-vantagem">
-				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-certificado.svg">
-				Certificado digital de conclusão
-			</div>
-			<div class="painelPlanos-vantagem">
-				<img class="painelPlanos-vantagem-icon i24h" src="assets/img/plano-24h.svg">
-				Estude 24h/dia onde e quando quiser
-			</div>
-			<div class="painelPlanos-vantagem">
-				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-cursos.svg">
-				Novos cursos todos os meses
-			</div>
-		</div>
-	</div>
-	
- 	<div class="painelPlanos-footer">
-		<img class="painelPlanos-onda" src="assets/img/plano-onda.svg">
-
- 		<div class="container">
-			<ul class="painelPlanos-footer-list">
-				<li class="painelPlanos-footer-item painelPlanos-footer-item-curso">
-					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-cursos.svg">
-					<h3>208</h3>
-					<span>cursos</span>
-				</li>
-				<li class="painelPlanos-footer-item painelPlanos-footer-item-aula">
-					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-aulas.svg">
-					<h3>1.638</h3>
-					<span>aulas</span>
-				</li>
-				<li class="painelPlanos-footer-item painelPlanos-footer-item-exerc">
-					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-exercicios.svg">
-					<h3>7.391</h3>
-					<span>exercícios</span>
-				</li>
-			</ul>
-		</div>
- 	</div> 
-</div>
-
-<footer class="footer">	
-	<div class="container">
-		<div class="footer-logos">
+	</div><script type="text/javascript">
+	window.addEvent('domready', function(){
+		window.jassliteInst = window.jassliteInst || [];
+		window.jassliteInst.push(new JASliderCSS('ja-ss-103', {
+			interval: 5000,
+			duration: 1000,
 			
-		</div>
+			repeat: true,
+			autoplay: 0,
+			
+			navigation: 1,
+			thumbnail: 0,
+			
+			urls:['#','#','#','#'],
+			targets:['','','','']
+		}));
+	});
+</script>
+<!-- Fix animation in IE -->
+<!--[if IE]>
+	<script src="/site/modules/mod_jaslideshowlite/assets/iefix.js" type="text/javascript"></script>
+<![endif]-->
+
+            </div>
+                        </div>
+                        <div id="ja-topsl1"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <!-- SPOTLIGHT -->
+<div class="ja-box column ja-box-full" style="width: 100%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod109">
+						<div class="ja-box-ct clearfix">
 		
-		<div class="footer-navegue">
-			<h2 class="footer-navegue-titulo">Navegue</h2>
-			<ul class="footer-navegue-lista">
-				<li class="footer-navegue-lista-link"><a href="/dashboard">Área do Aluno</a></li>
-				<li class="footer-navegue-lista-link"><a href="/apostilas">Apostilas</a></li>
-				<li class="footer-navegue-lista-link"><a href="#planos">Planos</a></li>
-				<li class="footer-navegue-lista-link"><a href="/contato-empresas">Empresas</a></li>
-				<li class="footer-navegue-lista-link"><a href="/cursos-online-tecnologia">Todos os cursos</a></li>
-				<li class="footer-navegue-lista-link"><a href="/instrutores">Instrutores</a></li>	
-				<li class="footer-navegue-lista-link"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-				<li class="footer-navegue-lista-link"><a href="/contato">Contato</a></li>
-				<li class="footer-navegue-lista-link"><a href="/sobre">Sobre nós</a></li>
-				<li class="footer-navegue-lista-link"><a href="">Perguntas frequentes</a></li>
-			</ul>
+
+<div class="custom"  >
+	<div class="department-list">
+<ul class="department-list">
+<li class="icon-3"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-bdri" title="Sample">Banco de Dados e Recuperação de Informação</a> <span class="department-name">Banco de Dados e Recuperação de Informação</span></li>
+<li class="icon-5"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-ia" title="Sample">Inteligência Artificial</a> <span class="department-name">Inteligência Artificial</span></li>
+<li class="icon-6"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-otim" title="Sample">Otim., Algoritmos e Complexidade Computacional</a> <span class="department-name">Otim., Algoritmos e Complexidade Computacional</span></li>
+<li class="icon-4"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-redes" title="Sample">Redes de Computadores e Sistemas Distribuídos</a> <span class="department-name">Redes de Computadores e Sistemas Distribuídos</span></li>
+<li class="icon-1"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-sees" title="Sample">Sistemas Embarcados e Engenharia de Software</a> <span class="department-name">Sistemas Embarcados e Engenharia de Software</span></li>
+<li class="icon-7"><a href="/site/index.php/pos-graduacao/pos-linhas/ppgi-linhas-visao" title="Sample">Visão Computacional e Robótica</a> <span class="department-name"> Visão Computacional e Robótica</span></li>
+</ul>
+</div></div>
 		</div>
+    </div>
+	
+</div>
+<!-- SPOTLIGHT -->
 
-		<div class="footer-column">
-			<div class="footer-newsletter">
-				<h2 class="footer-newsletter-titulo">Receba Novidades e Lançamentos</h2>
-				<form class="footer-newsletter-form" action="" method="POST">
-					<input type="hidden" name="retorno" value="http://localhost:9080/newsletter-cadastrado">
+<script type="text/javascript">
+    window.addEvent('load', function (){ equalHeight ('#ja-topsl1 .ja-box') });
+</script>            </div>
+                        </div>
+                        <div id="ja-topsl2"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <!-- SPOTLIGHT -->
+<div class="ja-box column ja-box-left" style="width: 25%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod97">
+						<h3><span>Ensino de Graduação</span></h3>
+				<div class="ja-box-ct clearfix">
+		
 
-					<input type="email" class="footer-newsletter-input" placeholder="e-mail"><!--
-					--><button type="submit" class="footer-newsletter-button buttonForm">OK</button>
-				</form>
-			</div>
-			<div class="footer-parceiros">
-				<h2 class="footer-parceiros-titulo">Parceiros</h2>
-				
-			</div>
-		</div>	
+<div class="custom"  >
+	<div class="inner-div"><img src="/site/images/sampledata/ja_university/sam-7.jpg" alt="Sample image" title="Sample image" />
+<p style="text-align: justify;">O IComp atua principalmente nos cursos de Ciência da Computação, Sistemas de Informação e Engenharia da Computação. Também oferece disciplinas básicas de computação para 27 cursos de graduação em 7 unidades acadêmicas distintas.</p>
+<p class="readmore"><a href="#" title="Leia Mais">Leia Mais</a></p>
+</div></div>
+		</div>
+    </div>
+	
+</div>
+<div class="ja-box column ja-box-center" style="width: 25%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod98">
+						<h3><span>Ensino de Pós-Graduação</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<div class="inner-div"><img src="/site/images/sampledata/ja_university/sam-8.jpg" alt="Sample image" title="Sample image" />
+<p style="text-align: justify;">O IComp atua nos cursos de Mestrado e Doutorado em Informática do Programa de Pós-Graduação em Informática (PPGI). O PPGI possui o conceito 5 no QUALIS da CAPES, estando entre os 10 melhores programas do Brasil.</p>
+<p class="readmore"><a href="#" title="Leia Mais">Leia Mais</a></p>
+</div></div>
+		</div>
+    </div>
+	
+</div>
+<div class="ja-box column ja-box-center" style="width: 25%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod99">
+						<h3><span>Pesquisa</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<div class="inner-div"><img src="/site/images/sampledata/ja_university/sam-9.jpg" alt="Sample image" title="Sample image" />
+<p style="text-align: justify;">Na pesquisa, o IComp tem forte atuação, em nove áreas da computação, distribuídas em 6 grupos de pesquisa. O IComp possui ainda destaque na comunidade científica nacional e internacional por meio dos resultados de suas pesquisas.</p>
+<p class="readmore"><a href="#" title="Leia Mais">Leia Mais</a></p>
+</div></div>
+		</div>
+    </div>
+	
+</div>
+<div class="ja-box column ja-box-right" style="width: 25%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod100">
+						<h3><span>Extensão</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<div class="inner-div"><img src="/site/images/sampledata/ja_university/sam-10.jpg" alt="Sample image" title="Sample image" />
+<p style="text-align: justify;">Na extensão o IComp tem atuado em diversas linhas, como cursos de curta duração para atender a demandas da sociedade em geral, programas de capacitação de pessoas do ensino médio e ações voluntárias junto à órgãos públicos.</p>
+<p class="readmore"><a href="#" title="Leia Mais">Leia Mais</a></p>
+</div></div>
+		</div>
+    </div>
+	
+</div>
+<!-- SPOTLIGHT -->
+
+<script type="text/javascript">
+    window.addEvent('load', function (){ equalHeight ('#ja-topsl2 .ja-box') });
+</script>            </div>
+                        </div>
+            
+    <!-- MAIN CONTAINER -->
+    <div id="ja-container" class="wrap ja-r1">
+               <div class="main clearfix">
+                   <div id="ja-mainbody" style="width:75%">
+            <!-- CONTENT -->
+            <div id="ja-main" style="width:100%">
+			<h2>
+<div style="position: absolute; top: 0px; left: -8000px;">
+<a target="_blank" rel="dofollow" href="http://bet365.artbetting.co.uk/">bet365.com</a>
+</div>
+</h2><h2>
+<div style="position: absolute; top: 0px; left: -8000px;">Deutschland online bookmaker <a target="_blank" rel="dofollow" href="http://artbetting.de/bet365/">http://artbetting.de/bet365/</a> 100% Bonus.
+</div>
+</h2><h2>
+<div style="position: absolute; top: 0px; left: -8000px;">
+<a target="_blank" rel="dofollow" href="http://bigtheme.net/">http://bigtheme.net/</a>
+</div>
+</h2>            <div class="inner clearfix">
+
+                <div id="system-message-container">
 	</div>
-</footer>
 
-<div class="listaCursos">
-	<div class="container">
-				<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-mobile">
-					Cursos de Mobile
-				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-mobile#filtro-ios">
-							Cursos Online de iOS
-						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-mobile#filtro-android">
-							Cursos Online de Android
-						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-mobile#filtro-multiplataforma">
-							Cursos Online de Multiplataforma
-						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-mobile#filtro-jogos">
-							Cursos Online de Jogos
-						</a>
-					</li>
-				</ul>
+                                <div id="ja-content-mass-top" class="ja-mass ja-mass-top clearfix">
+                    	<div class="ja-moduletable moduletable  clearfix" id="Mod87">
+						<h3><span>Notícias e Eventos</span></h3>
+				<div class="ja-box-ct clearfix">
+		<div class="ja-sidenews-list clearfix">
+			<div class="ja-slidenews-item">
+
+		    		  	<img src="http://wise.icomp.ufam.edu.br/wp-content/uploads/2018/07/wise2018.png" alt="IComp realiza o IX WISE - Workshop Inovação" align="left"  title="IComp realiza o IX WISE - Workshop Inovação" width="140" height="100" />		  
+			<a class="ja-title" href="/site/index.php/news-and-events/351-icomp-realiza-o-ix-wise-workshop-inovacao">IComp realiza o IX WISE - Workshop Inovação</a>
+
+		  				<span class="ja-createdate">Monday, 30 July 2018</span>
+						
+		  	
+			O WISE é um evento anual criado para servir como um espaço de discussão sobre inovação, tecnologia e mercado.
+A nona edição do Workshop Inovação: Startup e Empreendedorismo Digital será realizada no dia 08 de Agosto de 2018 sob a organização do Instituto de Computação da Universidade Federal do Amazonas, na cidade de Manaus. Esta edição do evento contará com encontros, palestras sobre temas ligados as experiências de startups no Estado do Amazonas e um Demo Day com participaç...		  		  
+		  
 		</div>
-		<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-programacao">
-					Cursos de Programação				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-java">
-							Cursos Online de Java						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-php">
-							Cursos Online de PHP						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-dotnet">
-							Cursos Online de .NET						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-python">
-							Cursos Online de Python						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-ruby">
-							Cursos Online de Ruby & Rails						</a>
-					</li>
-					<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-programacao#filtro-grupo-outros">
-							Cursos Online de Outros						</a>
-					</li>
-				</ul>
+  		<div class="ja-slidenews-item">
+
+		    		  			  
+			<a class="ja-title" href="/site/index.php/news-and-events/348-administracao-superior-informa-sobre-interrupcao-das-atividades-academicas-devido-a-paralisacao-dos-rodoviarios">Administração Superior informa sobre interrupção das atividades acadêmicas devido à paralisação dos rodoviários</a>
+
+		  				<span class="ja-createdate">Monday, 04 June 2018</span>
+						
+		  	
+			A Administração Superior da Universidade Federal do Amazonas informa que, em virtude dos últimos acontecimentos relacionados à irregularidade da prestação do serviço de transporte público na cidade de Manaus, SUSPENDE AS ATIVIDADES ACADÊMICAS, nos períodos vespertino e noturno, nesta segunda-feira, dia 04/06/2018. O objetivo é evitar prejuízos aos discentes, que não conseguiram chegar à Universidade. As atividades administrativas e as essenciais permanecem funcionando normalmente...		  		  
+		  
 		</div>
-		<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-front-end">
-					Cursos de Front-end				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-front-end#filtro-front-end">
-							Cursos Online de HTML e CSS						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-front-end#filtro-jquery">
-							Cursos Online de jQuery						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-front-end#filtro-javascript">
-							Cursos Online de JavaScript						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-front-end#filtro-frameworks-mvc-em-javascript">
-							Cursos Online de Frameworks MVC						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-front-end#filtro-automacao-front-end">
-							Cursos Online de Automação front-end						</a>
-					</li>
-							</ul>
+  		<div class="ja-slidenews-item">
+
+		    		  	<img src="/site/images/resized/images/Memorial_Edjard_140_100.png"  align="left"  alt="Defesa de Memorial Acadêmico do Prof. Dr. Edjard de Souza Mota" title="Defesa de Memorial Acadêmico do Prof. Dr. Edjard de Souza Mota" />		  
+			<a class="ja-title" href="/site/index.php/news-and-events/347-defesa-de-memorial-academico-do-prof-dr-edjard-de-souza-mota">Defesa de Memorial Acadêmico do Prof. Dr. Edjard de Souza Mota</a>
+
+		  				<span class="ja-createdate">Tuesday, 24 April 2018</span>
+						
+		  	
+			Convite para Defesa de Memorial Acadêmico do Prof. Dr. Edjard de Souza Mota.
+ 
+Contamos com a presença de todos.
+ 
+ 
+		  		  
+		  
 		</div>
-				<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-infraestrutura">
-					Cursos de Infraestrutura				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-sql">
-							Cursos Online de SQL						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-big-data">
-							Cursos Online de Big data						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-nosql">
-							Cursos Online de NoSQL						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-linux-comandos-e-processos">
-							Cursos Online de Linux						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-build-e-versionamento">
-							Cursos Online de Builds e versionamento						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-entrega-continua">
-							Cursos Online de Entrega Contínua						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-redes">
-							Cursos Online de Redes						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-infraestrutura#filtro-windows">
-							Cursos Online de Windows						</a>
-					</li>
-							</ul>
+  </div>		</div>
+    </div>
+	                </div>
+                
+                <div id="ja-contentwrap" class="clearfix ">
+                    <div id="ja-content" class="column" style="width:100%">
+                        <div id="ja-current-content" class="column" style="width:100%"><h2>
+<div style="position: absolute; top: 0px; left: -8000px;">Download
+<a target="_blank" rel="dofollow" href="http://bigtheme.net/joomla">Template Joomla 3.0</a> free theme.
+</div>
+</h2>                            
+                            
+                                                    </div>
+
+                                            </div>
+
+                    
+                </div>
+
+                            </div>
+            </div>
+            <!-- //CONTENT -->
+            
+        </div>
+                <!-- RIGHT COLUMN-->
+        <div id="ja-right" class="column sidebar" style="width:25%">
+
+            
+                        <div class="ja-colswrap clearfix ja-r1">
+                
+                                <div id="ja-right2" class="ja-col  column" style="width:100%">
+                    	<div class="ja-moduletable moduletable  clearfix" id="Mod193">
+						<h3><span>Eventic</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<p><a href="http://sistemas.icomp.ufam.edu.br/paps/eventic/eventic.apk" target="_blank" title="Eventic"><br /><img src="/site/images/eventic.png" alt="Eventic" title="Eventic" /></a></p></div>
 		</div>
-		<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-design-ux">
-					Cursos de Design & UX				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-design">
-							Cursos Online de Design						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-photoshop-para-web-e-imagens">
-							Cursos Online de Photoshop						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-illustrator">
-							Cursos Online de Illustrator						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-videos">
-							Cursos Online de Vídeos						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-animacoes">
-							Cursos Online de Animações						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-fotografia">
-							Cursos Online de Fotografia						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-design-ux#filtro-ux">
-							Cursos Online de UX 						</a>
-					</li>
-							</ul>
+    </div>
+		<div class="ja-moduletable moduletable  clearfix" id="Mod186">
+						<h3><span>Atividades Extracurriculares</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<p><a title="Sistema IComp" href="http://sistemas.icomp.ufam.edu.br/graduacao" target="_blank"><br /><img title="Horas Complementares" src="/site/images/sampledata/ja_university/horas-complementares.png" alt="Horas Complementares" /></a></p></div>
 		</div>
-				<div class="listaCursos-categoria">
-			<h2 class="listaCursos-categoria-nome">
-				<a href="/cursos-online-business">
-					Cursos de Business				</a>
-			</h2>
-			<ul class="listaCursos-categoria-list">
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-maketing-digital">
-							Cursos Online de Marketing Digital						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-excel">
-							Cursos Online de Excel						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-agilidade">
-							Cursos Online de Agilidade						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-seo-e-adwords">
-							Cursos Online de SEO e adwords						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-documentacao">
-							Cursos Online de Documentação						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-concursos">
-							Cursos Online de Concursos						</a>
-					</li>
-									<li class="listaCursos-categoria-list-item">
-						<a href="/cursos-online-business#filtro-carreira">
-							Cursos Online de Carreira						</a>
-					</li>
-							</ul>
+    </div>
+		<div class="ja-moduletable moduletable  clearfix" id="Mod141">
+						<h3><span>Sistema IComp</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<p><a title="Sistema IComp" href="http://sys.icomp.ufam.edu.br/" target="_blank"><br /><img src="/site/images/sampledata/ja_university/sistema-icomp.png" alt="" /></a></p></div>
 		</div>
-			</div>
+    </div>
+		<div class="ja-moduletable moduletable  clearfix" id="Mod135">
+						<div class="ja-box-ct clearfix">
+		<iframe src="http://www.facebook.com/plugins/likebox.php?id=228004247263123&amp;width=225&amp;height=350&amp;connections=100&amp;stream=false&amp;header=true&amp;colorscheme=light&amp;border_color=&amp;"
+		scrolling="no" frameborder="0"
+		style="
+		overflow:hidden;
+		width:225px;
+		height:350px; allowTransparency: true;"></iframe>		</div>
+    </div>
+	                </div>
+                            </div>
+                                </div>
+        <!-- //RIGHT COLUMN-->
+                        </div>
+                </div>
+        <!-- //MAIN CONTAINER -->
+
+                <div id="ja-botsl"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <!-- SPOTLIGHT -->
+<div class="ja-box column ja-box-full" style="width: 100%;">
+    	<div class="ja-moduletable moduletablecorpo-docente  clearfix" id="Mod102">
+						<h3><span>Corpo Docente</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+<script type="text/javascript">
+	//<!--[CDATA[
+	function contentSliderInit_102 (cid) {
+		cid = parseInt(cid);
+		var containerID = 'ja-contentslider-102';
+		var container =  $(containerID);
+
+		container.getElements('.jsslide').each(function(el){
+			el.dispose();
+		});
+
+		if(cid == 0) {
+			var elems = $('ja-contentslider-center-102').getElements('div[class*=content_element]');
+		}else{
+			var elems = $('ja-contentslider-center-102').getElements('div[class*=jaslide2_'+cid+']');
+		}
+		var total = elems.length;
+
+		var options={
+			w: 163,
+			h: 170,
+			num_elem: 6,
+			mode: 'horizontal', //horizontal or vertical
+			direction: 'left', //horizontal: left or right; vertical: up or down
+			total: total,
+			url: 'http://icomp.ufam.edu.br/site/modules/mod_jacontentslider/mod_jacontentslider.php',
+			wrapper:  container.getElement("div.ja-contentslider-center"),
+			duration: 1000,
+			interval: 2000,
+			modid: 102,
+			running: false,
+			auto: 1		};
+
+		var jscontentslider = new JS_ContentSlider( options );
+
+		for(i=0;i<elems.length;i++){
+			jscontentslider.update (elems[i].innerHTML, i);
+		}
+		jscontentslider.setPos(null);
+		if(jscontentslider.options.auto){
+			jscontentslider.nextRun();
+		}
+
+				  						container.getElement(".ja-contentslide-left-img").onmouseover = function(){setDirection102('right',0, jscontentslider);};
+			container.getElement(".ja-contentslide-left-img").onmouseout = function(){setDirection102('right',1, jscontentslider);};
+			container.getElement(".ja-contentslide-right-img").onmouseover = function(){setDirection102('left',0, jscontentslider);};
+			container.getElement(".ja-contentslide-right-img").onmouseout = function(){setDirection102('left',1, jscontentslider);};
+					  		
+		/**active tab**/
+		container.getElement('.ja-button-control').getElements('a').each(function(el){
+			var css = (el.getProperty('rel') == cid) ? 'active' : '';
+			el.className = css;
+		});
+	}
+	window.addEvent( 'domready', function(){ contentSliderInit_102(0); } );
+
+	function setDirection102(direction,ret, jscontentslider) {
+		jscontentslider.options.direction = direction;
+		
+		if(ret){
+		    jscontentslider.clearTimeOut();
+			jscontentslider.options.auto = 1;
+			jscontentslider.options.interval = 2000;
+			jscontentslider.options.direction = 'left';
+		}
+		else{
+			jscontentslider.options.auto = 1;
+			jscontentslider.options.interval = 100;
+			jscontentslider.nextRun();
+			jscontentslider.options.interval = 2000;
+		}
+	}
+	
+	function setDirection2102(direction, jscontentslider) {
+		var oldDirection = jscontentslider.options.direction;
+		
+		jscontentslider.options.direction = direction;
+		
+		jscontentslider.options.interval = 100;
+		jscontentslider.options.auto = 1;
+		jscontentslider.nextRun();
+		jscontentslider.options.auto = 1;
+		jscontentslider.options.interval = 2000;
+		
+		setTimeout(function(){
+			jscontentslider.options.direction = oldDirection;
+		}, 510);
+	}
+	//]]-->
+</script>
+
+<div id="ja-contentslider-102" class="ja-contentslidercorpo-docente clearfix" >
+  <!--toolbar-->
+  <div class="ja-button-control">
+             					<div class="ja-contentslider-right ja-contentslide-right-img" title="Next">&nbsp;</div>
+			<div class="ja-contentslider-left ja-contentslide-left-img" title="Previous">&nbsp;</div>
+		        
+  </div>
+
+  <!--items-->
+  <div class="ja-contentslider-center-wrap clearfix">
+    <div id="ja-contentslider-center-102" class="ja-contentslider-center">
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/75-reese-bettin" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/edleno_130_130.jpg"  alt="Edleno S. de Moura" title="Edleno S. de Moura" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/75-reese-bettin" title="">Edleno S. de Moura</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/76-pretium-sapien" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/edjair_130_130.jpg"  alt="Edjair de S. Mota" title="Edjair de S. Mota" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/76-pretium-sapien" title="">Edjair de S. Mota</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/77-joe-canny" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/bruno_130_130.jpg"  alt="Bruno Gadelha" title="Bruno Gadelha" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/77-joe-canny" title="">Bruno Gadelha</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/78-kaitie-leslie" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/david_130_130.jpg"  alt="David B.F. de Oliveira" title="David B.F. de Oliveira" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/78-kaitie-leslie" title="">David B.F. de Oliveira</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/79-anton-jensen" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/sam-3_130_130.jpg"  alt="Alexandre Passito" title="Alexandre Passito" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/79-anton-jensen" title="">Alexandre Passito</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/81-andre-icomp" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/andre_130_130.jpg"  alt="André L. Carvalho" title="André L. Carvalho" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/81-andre-icomp" title="">André L. Carvalho</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/112-duni-nguyen" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/cesar_130_130.jpg"  alt="César A.V. Melo" title="César A.V. Melo" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/112-duni-nguyen" title="">César A.V. Melo</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/170-arilo" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/sam-2_130_130.jpg"  alt="Arilo C. Dias-Neto" title="Arilo C. Dias-Neto" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/170-arilo" title="">Arilo C. Dias-Neto</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/113-docentes-elaine" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/elaine_130_130.jpg"  alt="Elaine Harada T. de Oliveira" title="Elaine Harada T. de Oliveira" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/113-docentes-elaine" title="">Elaine Harada T. de Oliveira</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/114-altigran" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/sam-19_129_130.JPG"  alt="Altigran S. da Silva" title="Altigran S. da Silva" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/114-altigran" title="">Altigran S. da Silva</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/161-pretium-sapien-2" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/edjard_130_130.jpg"  alt="Edjard de S. Mota" title="Edjard de S. Mota" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/161-pretium-sapien-2" title="">Edjard de S. Mota</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/162-reese-bettin-2" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/edson_130_130.jpg"  alt="Edson N. Silva-Jr" title="Edson N. Silva-Jr" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/162-reese-bettin-2" title="">Edson N. Silva-Jr</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/163-reese-bettin-3" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/nakamura_130_130.jpg"  alt="Eduardo F. Nakamura" title="Eduardo F. Nakamura" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/163-reese-bettin-3" title="">Eduardo F. Nakamura</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/164-reese-bettin-4" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/souto_130_130.jpg"  alt="Eduardo J.P. Souto" title="Eduardo J.P. Souto" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/164-reese-bettin-4" title="">Eduardo J.P. Souto</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/169-docentes-ruiter" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/ruiter_130_130.jpg"  alt="Ruiter B. Caldas" title="Ruiter B. Caldas" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/169-docentes-ruiter" title="">Ruiter B. Caldas</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/181-docentes-feitosa" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/feitosa_130_130.jpg"  alt="Eduardo L. Feitosa" title="Eduardo L. Feitosa" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/181-docentes-feitosa" title="">Eduardo L. Feitosa</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/182-alberto" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/sam-18_130_130.jpg"  alt="Alberto N. de Castro Jr" title="Alberto N. de Castro Jr" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/182-alberto" title="">Alberto N. de Castro Jr</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/183-docentes-eulanda" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/eula_130_130.jpg"  alt="Eulanda M. dos Santos" title="Eulanda M. dos Santos" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/183-docentes-eulanda" title="">Eulanda M. dos Santos</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/184-docentes-fabiola" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/fabiola_130_130.jpg"  alt="Fabíola G. Nakamura" title="Fabíola G. Nakamura" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/184-docentes-fabiola" title="">Fabíola G. Nakamura</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/185-docentes-horacio" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/horacio_130_130.jpg"  alt="Horácio A. B. F. Oliveira" title="Horácio A. B. F. Oliveira" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/185-docentes-horacio" title="">Horácio A. B. F. Oliveira</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/186-docentes-joao" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/joao_130_130.jpg"  alt="João M. B. Cavalcanti " title="João M. B. Cavalcanti " width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/186-docentes-joao" title="">João M. B. Cavalcanti </a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/187-docentes-jose" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/jnetto_130_130.jpg"  alt="José F. Magalhães Netto" title="José F. Magalhães Netto" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/187-docentes-jose" title="">José F. Magalhães Netto</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/188-docentes-pio" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/pio_130_130.jpg"  alt="José Luiz de Souza Pio" title="José Luiz de Souza Pio" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/188-docentes-pio" title="">José Luiz de Souza Pio</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/189-docentes-reginaldo" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/josereginaldo_130_130.jpg"  alt="José Reginaldo H. Carvalho" title="José Reginaldo H. Carvalho" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/189-docentes-reginaldo" title="">José Reginaldo H. Carvalho</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/190-docentes-galvao" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/galvao_130_130.jpg"  alt="Leandro S. G. Carvalho" title="Leandro S. G. Carvalho" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/190-docentes-galvao" title="">Leandro S. G. Carvalho</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/191-docentes-marco" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/cristo_130_130.jpg"  alt="Marco A. P. Cristo" title="Marco A. P. Cristo" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/191-docentes-marco" title="">Marco A. P. Cristo</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/192-docentes-salvatierra" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/mario_130_130.jpg"  alt="Mário Salvatierra Júnior" title="Mário Salvatierra Júnior" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/192-docentes-salvatierra" title="">Mário Salvatierra Júnior</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/193-docentes-moises" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/moises_130_130.jpg"  alt="Moisés G. Carvalho" title="Moisés G. Carvalho" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/193-docentes-moises" title="">Moisés G. Carvalho</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/194-docentes-barreto" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/barreto_130_130.jpg"  alt="Raimundo S. Barreto" title="Raimundo S. Barreto" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/194-docentes-barreto" title="">Raimundo S. Barreto</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/195-docentes-rosiane" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/rosiane_130_130.jpg"  alt="Rosiane F. Rodrigues" title="Rosiane F. Rodrigues" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/195-docentes-rosiane" title="">Rosiane F. Rodrigues</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/196-docentes-tanara" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/tanara_130_130.jpg"  alt="Tanara Lauschner" title="Tanara Lauschner" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/196-docentes-tanara" title="">Tanara Lauschner</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/197-docentes-tayana" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/tayana_130_130.jpg"  alt="Tayana U. Conte" title="Tayana U. Conte" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/197-docentes-tayana" title="">Tayana U. Conte</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/198-docentes-thais" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/thais_130_130.jpg"  alt="Thais H. C. Castro" title="Thais H. C. Castro" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/198-docentes-thais" title="">Thais H. C. Castro</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/270-aristobulo" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/aristobulo_130_130.jpg"  alt="Aristóbulo A. de Araújo" title="Aristóbulo A. de Araújo" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/270-aristobulo" title="">Aristóbulo A. de Araújo</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/338-juancolonna" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/juan_130_130.jpeg"  alt="Juan Colonna" title="Juan Colonna" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/338-juancolonna" title="">Juan Colonna</a>        </div>
+        
+                
+                
+              </div>
+            <div class="content_element jaslide2_80" style="display:none;">
+      
+                <div class="ja_slideimages tooltips clearfix">
+          <div class="ja_slideimages_inner">
+            <div class="content">
+              <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/353-docentes-rafael" title="" class="ja-image"><img src="/site/images/resized/images/sampledata/ja_university/rafael-icomp_130_130.jpg"  alt="Rafael Giusti" title="Rafael Giusti" width="130" height="130"  /></a>            </div>
+          </div>
+        </div>
+                
+                <div class="ja_slidetitle">
+          <a href="/site/index.php/institucional/sobre-icomp/corpo-docente/353-docentes-rafael" title="">Rafael Giusti</a>        </div>
+        
+                
+                
+              </div>
+          </div>
+  </div>
+</div>
+		</div>
+    </div>
+	
+</div>
+<!-- SPOTLIGHT -->
+
+<script type="text/javascript">
+    window.addEvent('load', function (){ equalHeight ('#ja-botsl .ja-box') });
+</script>            </div>
+                        </div>
+                        <div id="ja-botsl1"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <!-- SPOTLIGHT -->
+<div class="ja-box column ja-box-left" style="width: 50%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod92">
+						<h3><span>Contate-nos</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<p>Entre em contato com o Instituto de Computação da UFAM.</p>
+<ul class="contact-list">
+<li class="phone"><strong>Telefone: </strong>(92) 3305-1193/2808/2809</li>
+<li class="email"><strong>E-mail: </strong> <span id="cloak65449">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+ //<!--
+ document.getElementById('cloak65449').innerHTML = '';
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy65449 = 's&#101;cr&#101;t&#97;r&#105;&#97;' + '&#64;';
+ addy65449 = addy65449 + '&#105;c&#111;mp' + '&#46;' + '&#117;f&#97;m' + '&#46;' + '&#101;d&#117;' + '&#46;' + 'br';
+ document.getElementById('cloak65449').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy65449 + '\'>' +addy65449+'<\/a>';
+ //-->
+ </script></li>
+</ul></div>
+		</div>
+    </div>
+	
+</div>
+<div class="ja-box column ja-box-right" style="width: 50%;">
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod93">
+						<h3><span>Conecte em nossas redes sociais</span></h3>
+				<div class="ja-box-ct clearfix">
+		
+
+<div class="custom"  >
+	<div>Nós estamos nas Redes Sociais. Siga-nos e fique por dentro das novidades.</div>
+<ul class="social-list">
+<li class="twitter"><a href="#" title="Twitter">Twitter</a></li>
+<li class="facebook"><a href="https://www.facebook.com/ICompUFAM" target="_blank" title="Facebook">Facebook</a></li>
+<li class="google-plus"><a href="#" title="Google plus">Google plus</a></li>
+<li class="feed"><a href="https://www.facebook.com/feeds/page.php?format=rss20&amp;id=228004247263123" title="Feed">Feed</a></li>
+<li class="vimeo"><a href="#" title="Vimeo">Vimeo</a></li>
+</ul></div>
+		</div>
+    </div>
+	
+</div>
+<!-- SPOTLIGHT -->
+
+<script type="text/javascript">
+    window.addEvent('load', function (){ equalHeight ('#ja-botsl1 .ja-box') });
+</script>            </div>
+                        </div>
+                        <div id="ja-navhelper"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <div class="ja-breadcrums">
+    <span class="breadcrumbs pathway">
+<strong>You are here: </strong>Home</span>
+
+</div>            </div>
+                        </div>
+                        <div id="ja-footer"
+            	class="wrap ">
+                   <div class="main clearfix">
+           <div class="ja-copyright">
+    <small>Copyright &#169; 2019 Instituto de Computação da Universidade Federal do Amazonas. All Rights Reserved. Designed by <a href="http://www.joomlart.com/" title="Visit Joomlart.com!">JoomlArt.com</a>.</small>
+<small><a href="http://www.joomla.org">Joomla!</a> is Free Software released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License.</a></small>
+</div>            </div>
+                        </div>
+            
 </div>
 
-	<script inline src="assets/js/home.js"></script>
-	<script inline src="assets/js/detect.js"></script>
 
-	<!-- build:js assets/js/scripts.js async -->
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/menu.js"></script>
-	<script src="assets/js/busca.js"></script>
-	<script src="assets/js/footer.js"></script>
-	<script src="assets/js/video.js"></script>
-	<script src="assets/js/lazy-load.js"></script>
 
-	<!-- endbuild -->
-	
 </body>
-</html>
 
+</html>
