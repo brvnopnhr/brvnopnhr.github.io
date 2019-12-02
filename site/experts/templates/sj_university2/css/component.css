@@ -1,0 +1,56 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+/*******************************************
+***       Style color  Default           ***
+*******************************************/
+/*   1.List All Categories
+ *   	1.Category Blog
+ *   	2.Featured Articles
+ *   	3.Single Article
+ *   	4.Tags Component
+ *   	5.Archived Articles
+ *   	6.Pagination
+ *   	7.Page Email & Print
+ *   	8.Page Break  
+ *   2.Search
+ *   3.Newsfeed
+ *   4.Weblinkitems
+ *   5.User Component
+ *   6.Contact Component
+ */
+.pager .pagination {
+  height: auto;
+  margin: 5px auto 8px;
+  display: none;
+}
+.pager .pagination ul li {
+  margin: 0 2px;
+  overflow: hidden;
+}
+.pager .pagination ul li a,
+.pager .pagination ul li span {
+  float: none;
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  color: #777777;
+  background: #fff;
+  border-radius: 0 !important;
+  height: 32px;
+  vertical-align: top;
+}
+.pager .pagination ul li.active span,
+.pager .pagination ul li:hover span,
+.pager .pagination ul li.active a,
+.pager .pagination ul li:hover a {
+  color: #fff;
+  background: #007a8f;
+  border: 1px solid #007a8f;
+}
+.pager .pagination ul li .pagenav .r-hiden {
+  display: none;
+}

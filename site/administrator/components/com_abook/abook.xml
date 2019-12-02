@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+        <name>com_abook</name>
+        <creationDate>2016-01-26</creationDate>
+        <author>Ugolotti Federica</author>
+        <authorEmail>federica@informatizzati.org</authorEmail>
+        <authorUrl>http://www.alexandriabooklibrary.org</authorUrl>
+        <copyright>Copyright Ugolotti Federica</copyright>
+        <license>License GPL 2.0</license>
+        <version>3.1.1</version>
+        <description>COM_ABOOK_DESC</description>
+        <files folder="site">
+                <filename>controller.php</filename>
+                <filename>abook.php</filename>
+                <filename>index.html</filename>
+                <filename>router.php</filename>
+                <folder>helpers</folder>
+                <folder>controllers</folder>
+                <folder>models</folder>
+                <folder>views</folder>
+                <folder>assets</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+        </files>
+        <install>
+                <sql>
+                        <file charset="utf8" driver="mysql">install.sql</file>
+                </sql>
+        </install>
+        <uninstall>
+                <sql>
+                        <file charset="utf8" driver="mysql">uninstall.sql</file>
+                </sql>
+        </uninstall>
+	<update>
+                <schemas>
+                        <schemapath type="mysql">sql/updates/mysql</schemapath>
+                </schemas>
+        </update>
+        <administration>
+		<menu img="class:abook" link="option=com_abook" view="cpanel">com_abook</menu>
+                <submenu>
+                        <menu link="option=com_abook" view="cpanel" img="class:abook-cpanel"
+                                alt="Abook/Cpanel">com_abook_control_panel</menu>
+                        <menu link="option=com_abook&amp;view=books" view="books" img="class:abook-books" alt="Abook/Books">com_abook_books</menu>
+                        <menu link="option=com_abook&amp;view=authors" view="authors"
+                                img="class:abook-authors" alt="Abook/Authors">com_abook_authors</menu>
+			<menu link="option=com_abook&amp;view=editors" view="editors"
+                                img="class:abook-editors" alt="Abook/Editors">com_abook_editors</menu>
+			<menu link="option=com_abook&amp;view=categories" view="categories"
+                                img="class:abook-categories" alt="Abook/Categories">com_abook_categories</menu>
+			<menu link="option=com_abook&amp;view=libraries" view="libraries"
+                                img="class:abook-libraries" alt="Abook/Libraries">com_abook_libraries</menu>
+			<menu link="option=com_abook&amp;view=locations" view="locations"
+                                img="class:abook-locations" alt="Abook/Locations">com_abook_locations</menu>
+			<menu link="option=com_abook&amp;view=tags" view="tags"
+                                img="class:abook-tags" alt="Abook/Tags">com_abook_tags</menu>
+			<menu link="option=com_abook&amp;view=taggroups" view="taggroups"
+                                img="class:abook-taggroups" alt="Abook/Taggroups">com_abook_taggroups</menu>
+			<menu link="option=com_abook&amp;view=lends" view="lends"
+                                img="class:abook-lends" alt="Abook/Lends">com_abook_lends</menu>
+			<menu link="option=com_abook&amp;view=importexport" view="importexport"
+                                img="class:abook-importexport" alt="Abook/Importexport">com_abook_importexport</menu>
+                </submenu>
+                <files folder="admin">
+                        <filename>abook.php</filename>
+			<filename>access.xml</filename>
+                        <filename>index.html</filename>
+                        <filename>install.sql</filename>
+                        <filename>uninstall.sql</filename>
+                        <filename>config.xml</filename>
+                        <filename>controller.php</filename>
+                        <folder>controllers</folder>
+                        <folder>assets</folder>
+                        <folder>models</folder>
+                        <folder>tables</folder>
+                        <folder>views</folder>
+			<folder>helpers</folder>
+			<folder>uploads</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+                </files>
+        </administration>
+</extension>

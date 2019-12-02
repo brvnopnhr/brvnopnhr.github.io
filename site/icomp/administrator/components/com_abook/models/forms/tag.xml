@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset>
+		<field name="id"
+			type="text"
+			default="0"
+			label="JGLOBAL_FIELD_ID_LABEL"
+                        readonly="true"
+			class="readonly" />
+		<field
+                	name="name"
+ 			type="text"
+                	label="COM_ABOOK_NAME"
+                	class="inputbox input-xxlarge input-large-text"
+                	size="40"
+                	required="true"/>
+		<field
+	                name="alias"
+        	        type="text"
+	                label="JFIELD_ALIAS_LABEL"
+        	        description="JFIELD_ALIAS_DESC"
+                	class="inputbox"
+                	size="40"/>
+		<field name="id_taggroup" type="sql"
+                        label="COM_ABOOK_FIELD_TAGGROUP_LABEL" description="COM_ABOOK_FIELD_TAGGROUP_DESC"
+                        query="SELECT id, name FROM #__abtag_groups" key_field="id" value_field="name"
+                        class="inputbox" default="0" required="true"/>
+		<field
+                        name="language"
+                        type="contentlanguage"
+                        label="JFIELD_LANGUAGE_LABEL"
+                        description="COM_ABOOK_FIELD_LANGUAGE_DESC"
+                        class="inputbox">
+                        <option value="*">JALL</option>
+                </field>
+		<field
+	                name="description"
+        	        type="editor"
+                	label="JGLOBAL_DESCRIPTION"
+	                description="COM_ABOOK_DESCRIPTION_DESC"
+        	        class="inputbox"
+                	filter="JComponentHelper::filterText"
+	                buttons="true" hide="readmore,pagebreak"/>
+		<field name="metadesc" type="textarea"
+                        label="COM_ABOOK_FIELD_META_DESC_LABEL" description="COM_ABOOK_FIELD_META_DESC"
+                        cols="30" rows="5" />
+                <field name="metakey" type="textarea"
+                        label="COM_ABOOK_FIELD_META_KEYS_LABEL" description="COM_ABOOK_FIELD_META_KEYWORDS_DESC"
+                        cols="30" rows="5" />
+	</fieldset>
+</form>

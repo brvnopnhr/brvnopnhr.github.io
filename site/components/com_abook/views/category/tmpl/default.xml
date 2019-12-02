@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: default.xml 18291 2010-07-29 10:10:41Z infograf768 $ -->
+<metadata>
+	<layout title="COM_ABOOK_CATEGORY_VIEW_DEFAULT_TITLE">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_ABOOK_CATEGORY"
+		/>
+		<message>
+			<![CDATA[COM_ABOOK_CATEGORY_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_abook/models/fields"
+		>
+
+			<field name="id" type="categoryedit"
+				description="COM_ABOOK_CATEGORY_DESC"
+				extension="com_abook"
+				label="COM_ABOOK_CATEGORY"
+				required="true"
+			/>
+		</fieldset>
+	</fields>
+
+
+	<!-- Add fields to the parameters object for the layout. -->
+<fields name="params">
+                <fieldset name="general" label="COM_ABOOK_GENERAL_OPTIONS">
+                        <field
+                                name="breadcrumb"
+                                type="list"
+                                label="COM_ABOOK_BREADCRUMB"
+                                description="COM_ABOOK_TIPS_BREADCRUMB"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">COM_ABOOK_OPTION_BREADCRUMB_JOOMLA</option>
+                                <option value="2">COM_ABOOK_OPTION_BREADCRUMB_ABOOK</option>
+
+                        </field>
+                        <field
+                                name="search"
+				type="list"
+				label="COM_ABOOK_SEARCH"
+				description="COM_ABOOK_TIPS_SEARCH">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+                </fieldset>
+		<fieldset name="basic" label="COM_ABOOK_CATEGORY_OPTIONS">
+			<field name="show_category_title" type="list"
+        			label="JGLOBAL_SHOW_CATEGORY_TITLE" default="1"
+                		description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+   			>
+                		<option value="0">JHIDE</option>
+                		<option value="1">JSHOW</option>
+        		</field>
+			<field
+                        	name="catimage"
+	                        type="imagelist"
+        	                default=""
+                	        hide_default="true"
+                        	label="COM_ABOOK_IMAGE"
+	                        description=""
+        	                directory="components/com_abook/assets/images/folder/"
+                	        exclude=""
+                        	stripext=""
+                	>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="cat_custom_image">COM_ABOOK_CAT_CUSTOM_IMAGE</option>
+				<option value="icon-folder">icon-folder</option>
+                	</field>
+                	<field
+                        	name="categorypagination"
+	                        type="list"
+        	                menu="hide"
+                	        default="10"
+                        	label="COM_ABOOK_NUM_CAT"
+	                        description="COM_ABOOK_TIPS_NUM_CAT"
+        	        >
+                                <option value="5">J5</option>
+                                <option value="10">J10</option>
+                                <option value="15">J15</option>
+                                <option value="20">J20</option>
+                                <option value="25">J25</option>
+                                <option value="30">J30</option>
+                                <option value="50">J50</option>
+                                <option value="100">J100</option>
+                                <option value="0">JALL</option>
+                	</field>
+                        <field name="maxLevel" type="list"
+                                description="JGLOBAL_MAXIMUM_CATEGORY_LEVELS_DESC"
+                                label="JGLOBAL_MAXIMUM_CATEGORY_LEVELS_LABEL"
+                        >
+                                <option value="-1">JALL</option>
+                                <option value="0">JNONE</option>
+                                <option value="1">J1</option>
+                                <option value="2">J2</option>
+                                <option value="3">J3</option>
+                                <option value="4">J4</option>
+                                <option value="5">J5</option>
+                        </field>
+			<field name="show_empty_categories" type="list"
+                                label="JGLOBAL_SHOW_EMPTY_CATEGORIES_LABEL"
+                                description="JGLOBAL_SHOW_EMPTY_CATEGORIES_DESC"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+                        <field name="show_description" type="list"
+                                description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC"
+                                label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+
+                        <field name="show_description_image" type="list"
+                                description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC"
+                                label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+                        <field name="show_item_count" type="list"
+                                label="COM_ABOOK_FIELD_ITEM_COUNT_LABEL"
+                                description="COM_ABOOK_FIELD_ITEMS_COUNT_DESC"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+				name="showpagination"
+				type="list"
+				label="JGLOBAL_PAGINATION_LABEL"
+                                description="JGLOBAL_PAGINATION_DESC"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+			</field>
+			<field
+                                name="bookpagination"
+                                type="list"
+                                label="COM_ABOOK_NUM_BOOKS"
+                                description="COM_ABOOK_TIPS_NUM_BOOKS"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="5">J5</option>
+                                <option value="10">J10</option>
+                                <option value="15">J15</option>
+                                <option value="20">J20</option>
+                                <option value="25">J25</option>
+                                <option value="30">J30</option>
+                                <option value="50">J50</option>
+                                <option value="100">J100</option>
+                                <option value="0">JALL</option>
+                        </field>
+			<field
+                                name="display_order"
+                                type="list"
+                                label="COM_ABOOK_BOOKS_ORDER"
+                                description="COM_ABOOK_TIPS_BOOKS_ORDER"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="title">COM_ABOOK_TITLE</option>
+                                <option value="dateinsert">JGLOBAL_MOST_RECENT_FIRST</option>
+                                <option value="ordering">JGLOBAL_ARTICLE_MANAGER_ORDER</option>
+				<option value="year">COM_ABOOK_YEAR_MOST_RECENT_FIRST</option>
+                        </field>
+			<field
+                        	name="books_display_order_dir"
+	                        type="list"
+        	                label="COM_ABOOK_BOOKS_DISPLAY_ORDER_DIR"
+				description="COM_ABOOK_TIPS_BOOKS_DISPLAY_ORDER_DIR">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+	                        <option value="ASC">JGLOBAL_ORDER_ASCENDING</option>
+        	                <option value="DESC">JGLOBAL_ORDER_DESCENDING</option>
+                	</field>
+			<field
+                        	name="cat_display_order"
+	                        type="list"
+        	                label="JGLOBAL_CATEGORY_ORDER_LABEL"
+                	        description="JGLOBAL_CATEGORY_ORDER_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+	                        <option value="title">JGLOBAL_TITLE_ALPHABETICAL</option>
+        	                <option value="rtitle">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+                	        <option value="ordering">JGLOBAL_CATEGORY_MANAGER_ORDER</option>
+                	</field>
+		</fieldset>
+		<fieldset name="list" label="JGLOBAL_LIST_LAYOUT_OPTIONS" >
+			<field name="published" type="list"
+                                label="JSTATUS" description="JFIELD_PUBLISHED_DESC"
+                                class="inputbox" filter="intval" size="1" default="1">
+				<option value="*">JALL</option>
+                                <option value="1">JPUBLISHED</option>
+                                <option value="2">JARCHIVED</option>
+                        </field>
+			<field
+                                name="alphabet_bar" type="list"
+                                label="COM_ABOOK_ALPHABET_BAR" description="COM_ABOOK_TIPS_ALPHABET_BAR">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field type="spacer" name="filter1" class="lead mute" label="COM_ABOOK_FILTER_OPTIONS"/>
+                        <field
+                                name="filter_field" type="list"
+                                label="COM_ABOOK_FILTERS" description="COM_ABOOK_TIPS_FILTERS">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="filter_editor" type="list"
+                                label="COM_ABOOK_EDITOR" description="COM_ABOOK_TIPS_FILTER_EDITOR">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="filter_tag" type="list"
+                                label="COM_ABOOK_TAGS" description="COM_ABOOK_TIPS_FILTER_TAG">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="filter_category" type="list"
+                                label="COM_ABOOK_CATEGORY" description="COM_ABOOK_TIPS_FILTER_CATEGORY">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field type="spacer" name="filter2" hr="true" />
+			<field name="link_titles" type="list"
+                                description="JGLOBAL_LINKED_TITLES_DESC"
+                                label="JGLOBAL_LINKED_TITLES_LABEL"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JNO</option>
+                                <option value="1">JYES</option>
+                        </field>
+			<field
+                                name="show_bookimage"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_IMAGE_LABEL"
+                                description="COM_ABOOK_FIELD_PARAMS_IMAGE_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_bookdesc"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_BOOKDESC_LABEL"
+                                description="COM_ABOOK_FIELD_PARAMS_BOOKDESC_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_bookcat"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_BOOKCAT_LABEL"
+                                description="COM_ABOOK_FIELD_PARAMS_BOOKCAT_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_file"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_FILE_LABEL"
+                                description="COM_ABOOK_FIELD_PARAMS_FILE_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_cat_tags" type="list"
+                                label="COM_ABOOK_CAT_TAGS" description="COM_ABOOK_TIPS_CAT_TAGS">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field name="show_subcategory_book" type="list"
+                                description="JGLOBAL_SHOW_SUBCATEGORY_CONTENT_DESC"
+                                label="JGLOBAL_SHOW_SUBCATEGORY_CONTENT_LABEL"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JNONE</option>
+                                <option value="-1">JALL</option>
+                                <option value="1">J1</option>
+                                <option value="2">J2</option>
+                                <option value="3">J3</option>
+                                <option value="4">J4</option>
+                                <option value="5">J5</option>
+                        </field>
+			<field name="show_pag_index" type="list"
+                        label="COM_ABOOK_PAG_INDEX" description="COM_ABOOK_TIPS_PAG_INDEX"
+                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                </field>
+		</fieldset>
+		<fieldset name="book" label="COM_ABOOK_BOOK_OPTIONS">
+                        <field
+                        	name="show_icons"
+	                        type="list"
+                	        label="COM_ABOOK_ICONS"
+                        	description="COM_ABOOK_TIPS_ICONS"
+                		>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                	</field>
+			<field
+                        	name="show_print_icon"
+	                        type="list"    
+                	        label="COM_ABOOK_PRINT_ICON"
+                        	description="COM_ABOOK_TIPS_PRINT_ICON"
+                		>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+				
+                	</field>
+			<field
+                                name="show_year"
+                                type="list"
+                                label="COM_ABOOK_YEAR"
+                                description="COM_ABOOK_TIPS_YEAR">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+
+
+
+			<field
+                                name="show_isbn"
+                                type="list"
+                                label="COM_ABOOK_ISBN"
+                                description="COM_ABOOK_TIPS_ISBN"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_library"
+                                type="list"
+                                label="COM_ABOOK_LIBRARY"
+                                description="COM_ABOOK_TIPS_LIBRARY"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_location"
+                                type="list"
+                                label="COM_ABOOK_LOCATION"
+                                description="COM_ABOOK_TIPS_LOCATION"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_catalog"
+                                type="list"
+                                label="COM_ABOOK_CATALOG"
+                                description="COM_ABOOK_TIPS_CATALOG"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_category"
+                                type="list"
+                                label="COM_ABOOK_CATEGORY"
+                                description="COM_ABOOK_TIPS_CATEGORY"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_editor"
+                                type="list"
+                                label="COM_ABOOK_EDITOR"
+                                description="COM_ABOOK_TIPS_EDITOR"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_pag"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PAGES_LABEL"
+                                description="COM_ABOOK_TIPS_PAGES"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="view_rate"
+                                type="list"
+                                label="COM_ABOOK_VOTING"
+                                description="COM_ABOOK_TIPS_VOTING"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_bookcover"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_IMAGE_LABEL"
+                                description="COM_ABOOK_TIPS_COVER_IMAGE"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+
+
+
+
+
+
+
+                	<field
+                        	name="show_hits"
+				type="list"
+                        	label="COM_ABOOK_HITS"
+				description="COM_ABOOK_TIPS_HITS">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+	                        <option value="0">JHIDE</option>
+        	                <option value="1">JSHOW</option>
+                	</field>
+			<field
+                        	name="view_date"
+	                        type="list"
+                        	label="COM_ABOOK_DATEINSERT"
+	                        description="COM_ABOOK_TIPS_DATEINSERT"
+        	        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                	</field>
+			<field
+                        	name="show_tags" type="list"
+                        	label="COM_ABOOK_TAGS" description="COM_ABOOK_TIPS_TAGS"
+			>
+                        	<option value="">JGLOBAL_USE_GLOBAL</option>
+                        	<option value="0">JHIDE</option>
+                        	<option value="1">JSHOW</option>
+			
+                </field>
+		<field
+                        name="show_writtenby"
+                        type="list"
+                        label="COM_ABOOK_WRITTENBY"
+                        description="COM_ABOOK_TIPS_WRITTENBY">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                </field>
+		<field
+                        name="name_display" type="list"
+                        label="COM_ABOOK_NAME_DISPLAY" description="COM_ABOOK_TIPS_NAME_DISPLAY">
+                        <option value="">JGLOBAL_USE_GLOBAL</option>
+                        <option value="0">COM_ABOOK_LASTNAME_NAME</option>
+                        <option value="1">COM_ABOOK_NAME_LASTNAME</option>
+                </field>
+                </fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: default.xml 18291 2010-07-29 10:10:41Z infograf768 $ -->
+<metadata>
+	<layout title="COM_ABOOK_AUTHORS_VIEW_DEFAULT_TITLE">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_ABOOK_AUTHORS"
+		/>
+		<message>
+			<![CDATA[COM_ABOOK_AUTHORS_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+<fields name="params">
+                <fieldset name="general" label="COM_ABOOK_GENERAL_OPTIONS">
+                        <field
+                                name="search"
+				type="list"
+				label="COM_ABOOK_SEARCH"
+				description="COM_ABOOK_TIPS_SEARCH">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                        	name="name_display" type="list"
+                        	label="COM_ABOOK_NAME_DISPLAY" description="COM_ABOOK_TIPS_NAME_DISPLAY">
+                        		<option value="">JGLOBAL_USE_GLOBAL</option>
+                        		<option value="0">COM_ABOOK_LASTNAME_NAME</option>
+                        		<option value="1">COM_ABOOK_NAME_LASTNAME</option>
+                	</field>
+			<field
+				name="showpagination"
+				type="list"
+				label="JGLOBAL_PAGINATION_LABEL"
+                                description="JGLOBAL_PAGINATION_DESC"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+			</field>
+			<field
+                                name="bookpagination"
+                                type="list"
+                                label="COM_ABOOK_NUM_BOOKS"
+                                description="COM_ABOOK_TIPS_NUM_BOOKS"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="5">J5</option>
+                                <option value="10">J10</option>
+                                <option value="15">J15</option>
+                                <option value="20">J20</option>
+                                <option value="25">J25</option>
+                                <option value="30">J30</option>
+                                <option value="50">J50</option>
+                                <option value="100">J100</option>
+                                <option value="0">JALL</option>
+                        </field>
+			<field
+                                name="author_display_order"
+                                type="list"
+                                label="JFIELD_ORDERING_LABEL"
+                                description="JFIELD_ORDERING_DESC"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="lastname">COM_ABOOK_LASTNAME</option>
+				<option value="name">COM_ABOOK_NAME</option>
+                                <option value="ordering">JGLOBAL_ARTICLE_MANAGER_ORDER</option>
+                        </field>
+			<field
+                        	name="author_display_order_dir"
+	                        type="list"
+        	                label="JGLOBAL_ORDER_DIRECTION_LABEL"
+				description="JGLOBAL_ORDER_DIRECTION_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+	                        <option value="ASC">JGLOBAL_ORDER_ASCENDING</option>
+        	                <option value="DESC">JGLOBAL_ORDER_DESCENDING</option>
+                	</field>
+		</fieldset>
+                <fieldset name="basic" label="COM_ABOOK_BOOK_OPTIONS">
+                        <field name="show_item_count" type="list"
+                                label="COM_ABOOK_FIELD_ITEM_COUNT_LABEL"
+                                description="COM_ABOOK_FIELD_ITEMS_COUNT_DESC"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+                        <field
+                                name="showpagination"
+                                type="list"
+                                label="JGLOBAL_PAGINATION_LABEL"
+                                description="JGLOBAL_PAGINATION_DESC"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+                        <field
+                                name="bookpagination"
+                                type="list"
+                                label="COM_ABOOK_NUM_BOOKS"
+                                description="COM_ABOOK_TIPS_NUM_BOOKS"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="5">J5</option>
+                                <option value="10">J10</option>
+                                <option value="15">J15</option>
+                                <option value="20">J20</option>
+                                <option value="25">J25</option>
+                                <option value="30">J30</option>
+                                <option value="50">J50</option>
+                                <option value="100">J100</option>
+                                <option value="0">JALL</option>
+                        </field>
+                        <field
+                                name="display_order"
+                                type="list"
+                                label="COM_ABOOK_BOOKS_ORDER"
+                                description="COM_ABOOK_TIPS_BOOKS_ORDER"
+                        >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="title">COM_ABOOK_TITLE</option>
+                                <option value="dateinsert">COM_ABOOK_DATEINSERT</option>
+                                <option value="ordering">JGLOBAL_ARTICLE_MANAGER_ORDER</option>
+                                <option value="year">COM_ABOOK_YEAR</option>
+                        </field>
+                        <field
+                                name="books_display_order_dir"
+                                type="list"
+                                label="JGLOBAL_ORDER_DIRECTION_LABEL"
+                                description="JGLOBAL_ORDER_DIRECTION_DESC">
+                                        <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="ASC">JGLOBAL_ORDER_ASCENDING</option>
+                                <option value="DESC">JGLOBAL_ORDER_DESCENDING</option>
+                        </field>
+                </fieldset>
+		<fieldset name="list" label="JGLOBAL_LIST_LAYOUT_OPTIONS" >
+			<field
+                                name="alphabet_bar" type="list"
+                                label="COM_ABOOK_ALPHABET_BAR" description="COM_ABOOK_TIPS_ALPHABET_BAR">
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field name="link_titles" type="list"
+                                description="JGLOBAL_LINKED_TITLES_DESC"
+                                label="JGLOBAL_LINKED_TITLES_LABEL"
+                        >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JNO</option>
+                                <option value="1">JYES</option>
+                        </field>
+			<field
+                                name="show_item_image"
+                                type="list"
+                                label="COM_ABOOK_FIELD_PARAMS_IMAGE_LABEL"
+                                description="COM_ABOOK_FIELD_PARAMS_IMAGE_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+			<field
+                                name="show_item_desc"
+                                type="list"
+                                label="JGLOBAL_DESCRIPTION"
+                                description="COM_ABOOK_FIELD_PARAMS_BOOKDESC_DESC"
+                                >
+                                <option value="">JGLOBAL_USE_GLOBAL</option>
+                                <option value="0">JHIDE</option>
+                                <option value="1">JSHOW</option>
+                        </field>
+		</fieldset>
+	</fields>
+</metadata>

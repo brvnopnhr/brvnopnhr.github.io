@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="keys"
+		label="COM_ABOOK_SEARCH_DEFAULT_LABEL" addfieldpath="/administrator/components/com_abook/models/fields">
+		<field name="keyword" type="text"
+			label="COM_ABOOK_TITLE" description="COM_ABOOK_TITLE_DESC"
+			class="inputbox" size="50" required="true" />
+		<field name="year" type="text"
+                        label="COM_ABOOK_YEAR" description="COM_ABOOK_YEAR_DESC"
+                        class="inputbox" size="4" />
+		<field name="catid" type="categoryparent" extension="com_abook"
+                        label="JCATEGORY" description="COM_ABOOK_FIELD_CATEGORY_DESC"
+                        class="inputbox"/>
+		<field name="editor" type="sql"
+                        label="COM_ABOOK_EDITOR" description="COM_ABOOK_FIELD_EDITOR_DESC"
+			query="SELECT id, name FROM #__abeditor ORDER BY name" key_field="id" value_field="name"
+                        class="inputbox" />
+		<field name="author" type="sql"
+                        label="COM_ABOOK_AUTHOR" description="COM_ABOOK_FIELD_AUTHORS_DESC"
+                        query="SELECT id, name FROM #__abauthor ORDER BY name" key_field="id" value_field="name"
+                        class="inputbox" default="0"/>
+		<field name="library" type="sql"
+                        label="COM_ABOOK_LIBRARY" description="COM_ABOOK_FIELD_LIBRARIES_DESC"
+                        query="SELECT id, name FROM #__ablibrary ORDER BY name" key_field="id" value_field="name"
+                        class="inputbox" default="0"/>
+		<field name="location" type="sql"
+                        label="COM_ABOOK_LOCATION" description="COM_ABOOK_FIELD_LOCATION_DESC"
+                        query="SELECT id, name FROM #__ablocations ORDER BY name" key_field="id" value_field="name"
+                        class="inputbox" default="0"/>
+	</fieldset>
+</form>

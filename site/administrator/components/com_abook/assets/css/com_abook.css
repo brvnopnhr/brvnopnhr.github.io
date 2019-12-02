@@ -1,0 +1,67 @@
+/**
+ * @package Joomla
+ * @subpackage Abook
+ * @copyright (C) 2010 Ugolotti Federica
+ * @license GNU/GPL, see LICENSE.php
+ * Abook is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+
+ * Abook is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with Abook; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+/*.icon-48-abook-main { background-image: url(../images/abook-main-48.png); }
+.icon-48-locations  { background-image: url(../images/abook-locations-48.png); }
+.icon-48-authors    { background-image: url(../images/abook-authors-48.png); }
+.icon-48-editors    { background-image: url(../images/abook-editors-48.png); }
+.icon-48-libraries  { background-image: url(../images/abook-libraries-48.png); }
+.icon-48-books      { background-image: url(../images/abook-books-48.png); }
+.icon-48-abook-categories { background-image: url(../images/abook-categories-48.png); }
+.icon-48-tags	    { background-image: url(../images/abook-tags-48.png); }
+.icon-48-taggroups	{ background-image: url(../images/abook-taggroups-48.png); }
+.icon-48-importexport	{ background-image: url(../images/abook-importexport-48.png); }
+
+.icon-48-locationedit  { background-image: url(../images/abook-location-edit-48.png); }
+.icon-48-locationadd  { background-image: url(../images/abook-location-add-48.png); }
+.icon-48-authoredit    { background-image: url(../images/abook-author-edit-48.png); }
+.icon-48-authoradd    { background-image: url(../images/abook-author-add-48.png); }
+.icon-48-editoredit    { background-image: url(../images/abook-editor-edit-48.png); }
+.icon-48-editoradd    { background-image: url(../images/abook-editor-add-48.png); }
+.icon-48-libraryedit  { background-image: url(../images/abook-library-edit-48.png); }
+.icon-48-libraryadd  { background-image: url(../images/abook-library-add-48.png); }
+.icon-48-bookedit      { background-image: url(../images/abook-book-edit-48.png); }
+.icon-48-bookadd      { background-image: url(../images/abook-book-add-48.png); }
+.icon-48-categoryedit { background-image: url(../images/abook-category-edit-48.png);}
+.icon-48-categoryadd { background-image: url(../images/abook-category-add-48.png);}
+.icon-48-tagedit    { background-image: url(../images/abook-tag-edit-48.png); }
+.icon-48-tagadd    { background-image: url(../images/abook-tag-add-48.png); }
+.icon-48-taggroupedit    { background-image: url(../images/abook-taggroup-edit-48.png); }
+.icon-48-taggroupadd    { background-image: url(../images/abook-taggroup-add-48.png); }
+
+.icon-16-abook  { background-image: url(../images/abook-main.png); }
+.icon-16-locations  { background-image: url(../images/abook-locations.png); }
+.icon-16-authors    { background-image: url(../images/abook-authors.png); }
+.icon-16-editors    { background-image: url(../images/abook-editors.png); }
+.icon-16-libraries  { background-image: url(../images/abook-libraries.png); }
+.icon-16-books      { background-image: url(../images/abook-books.png); }
+.icon-16-categories { background-image: url(../images/abook-categories.png); }
+.icon-16-tags	    { background-image: url(../images/abook-tags.png); }
+.icon-16-taggroups	{ background-image: url(../images/abook-taggroups.png); }
+.icon-16-importexport	{ background-image: url(../images/abook-importexport.png); }
+
+div.bookrating {
+}
+
+div.bookrating .content_rating {
+        font-weight: bold;
+}
+*/
+#content .well .module-title.nav-header {
+    padding: 0 0 7px 15px;
+}

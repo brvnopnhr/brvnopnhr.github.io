@@ -1,0 +1,311 @@
+/**
+ * @package Joomla
+ * @subpackage Abook
+ * @copyright (C) 2010 Ugolotti Federica
+ * @license GNU/GPL, see LICENSE.php
+ * Abook is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+
+ * Abook is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with Abook; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+hr.separator {
+        border-style:dotted none none none;
+}
+
+.booksearch{
+	background: url('../images/find.png') no-repeat;
+	text-indent: 22px;
+	float: right;
+	height: 22px;
+}
+
+.bookheader{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li.folder {
+	list-style-type: none;
+}
+
+.cat-children {
+}
+
+.books {
+	border-collapse: collapse;
+	width: 100%;
+	border: none;
+}
+
+.books td {
+	border-bottom: 1px solid #DDD;
+	padding:5px;
+}
+
+.books td a{
+        text-decoration: none;
+}
+
+tr.odd:hover, tr.even:hover {
+	background: #dedede;
+}
+
+.cat-image{
+	width: 100px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+.cat-img-folder {
+	width: 48px;
+	height: 48px;
+}
+
+.field-search {
+	float:right;
+}
+
+.clr{
+        clear:both;
+}
+
+.abook-path{
+	margin-bottom: 10px;
+}
+
+.taggroup {
+	float: left;
+	margin: 0px 15px;
+	border-bottom: 1px solid #eee;
+	width: 180px;
+	padding: 0px;
+}
+
+.taggroup h3 {
+        font-weight: bold;
+        border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	width: 100%;
+	padding: 2px 0px;
+}
+table.booktab {
+	border:none;
+}
+
+/*table.bookdetails {
+	border-collapse: collapse;
+}
+
+table.bookdetails td{
+        border-top: 1px dotted #dedede;
+	border-bottom: 1px dotted #dedede;
+}*/
+.bookdetails {
+	margin-top: 0px;
+	display: table;
+}
+.book-title {
+	margin-top: 0px;
+}
+
+.book-subtitle {
+        font-size: 0.8em;
+	font-style: italic;
+}
+
+.abook_category_desc {
+	margin-bottom: 10px;
+}
+/*------------------------------------------*/
+/*scheda libro*/
+div.booktab {
+        border:none;
+	margin-top: 10px;
+}
+.cover {
+	/*float: left;*/
+	margin: 0px 5px 5px 0px;
+}
+
+.cover img {
+        width: 80px;
+        max-height: 112px;
+        margin: 0px 5px 5px 0px;
+}
+
+.cover img.img-polaroid {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+	width: auto;
+}
+
+div.bookdetails {
+	float: left;
+}
+
+div.bookdetails div{
+        clear: both;
+	padding: 3px;
+	border-top: 1px solid #dedede;
+}
+
+div.bookdetails div label{
+        font-weight: bold;
+}
+
+div.best {
+	clear: both;
+	width: 100%;
+	padding: 5px 0px;
+	border-top: 1px solid #dedede;
+}
+div.bookhits {
+        float: left;
+        width: 20%;
+}
+
+div.bookrating {
+        float: left;
+        width: 30%;
+}
+
+div.bookrating .content_rating {
+	font-weight: bold;
+}
+
+div.description {
+	border-top: 1px solid #dedede;
+	clear: both;
+        width: 100%;
+}
+div.createdate {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #dedede;
+}
+
+#documents .col1 {
+	float:left;
+	width: 45%;
+	padding-left: 0px;
+	list-style-type: none;
+	list-style-position: inside;
+}
+#documents .col1 li {
+	padding-left: 0px;
+}
+#documents .col2 {
+	float: left;
+	width: 45%;
+	list-style-type: none;
+}
+#documents .col2 li {
+	border-left: 1px solid #A41A37;
+	padding-left: 10px;
+}
+/*----------------------------------*/
+/*form serach */
+.abook_search_params p {
+        float: left;
+        margin-right: 10px;
+}
+
+.abook_search_params p label {
+        margin-right: 5px;
+}
+.result {
+	margin: 10px 0px;
+}
+.search-button {
+	text-align: center;
+}
+/*----------------------*/
+.no_children {
+	height: 1.2em;
+        width: 1.2em;
+	padding: 0.2em;
+	display: block;
+	float: left;
+}
+
+.plus_minus {
+	background: #dedede;
+	height: 1.2em;
+	width: 1.2em;
+	padding: 0.2em;
+	display: block;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1em;
+	cursor: pointer;
+}
+
+.biblio_title {
+        font-style: italic;
+}
+
+a.biblio_author:link, a.biblio_author:visited {
+        color: #696969;
+	text-decoration: none;
+}
+
+.bibliografy {
+}
+
+.letter {
+	float: left;
+}
+
+.letter.active a{
+        background: #095197;
+    	color: #FFFFFF;
+}
+
+.btn-group {
+    display: inline-block;
+}
+
+.btn-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.thisletter h2 {
+        border-bottom: 1px solid #DDDDDD;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+.books tr.noborder td, .books tr.noborder{
+	border: none;
+}
+
+.categories-list .indent {
+        display: inline-block;
+        width: 10px;
+}
+
+#load_review {
+	display: none;
+}
+
+div#sbox-content.sbox-content-clone div#load_review {
+        display: block;
+}
+
+.authors .navbar .nav > li > a,
+.category .navbar .nav > li > a {
+    padding: 11px 7px;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+    <name>SJ Categories II for K2</name>
+    <creationDate>January 2014</creationDate>
+    <author>YouTech Company</author>
+    <copyright>Copyright (C) 2009 - 2013 The YouTech Company</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@ytcvn.com</authorEmail>
+    <authorUrl>http://www.smartaddons.com</authorUrl>
+    <version>2.0.0</version>
+    <description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_sj_k2_categories_ii">mod_sj_k2_categories_ii.php</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+        <folder>elements</folder>
+        <folder>lib</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages/>
+    <config>
+        <fields name="params">
+            <fieldset name="GENERAL_OPTIONS" label="GENERAL_OPTIONS">
+                <field name="module_width" type="text" default="760" label="Module Width"
+                       description="blank value to set width=auto"/>
+                <field name="theme" type="list" default="theme1" label="Theme"
+                       description="Please choose a theme which you want to use in this module">
+                    <option value="theme1">Theme 1</option>
+                    <option value="theme2">Theme 2</option>
+                    <option value="theme3">Theme 3</option>
+                    <option value="theme4">Theme 4</option>
+                </field>
+            </fieldset>
+            <fieldset name="SOURCE_OPTIONS_LABEL" label="SOURCE_OPTIONS_LABEL"
+                      addfieldpath="/administrator/components/com_k2/elements/">
+                <field name="source" type="categoriesmultiple" default="0" label="Select Categories"
+                       description="Please categories for your module"/>
+                <field name="columns_max" type="text" default="3" label="Number columns"
+                       description="Number of column display on each rows"/>
+                <field name="max_item_lev1" type="text" default="5" label="Max items level 2"
+                       description="Max items level 2 will be shown"/>
+                <field name="columns_max_level2" type="text" default="2" label="Max columns in tooltip"
+                       description="Number of article in each category selected"/>
+                <field name="title_max_chars" type="text" default="-1" label="Title max chars"
+                       description="Max charactor of categories title"/>
+                <field name="more_hide" type="text" default="More/Hide" label="More/Hide button text"
+                       description="Text display in button More/Hide. Construct: More/Hide"/>
+                <field name="image_linkable" type="list" default="1" label="Image linkable"
+                       description="Endable link when click image">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="category_link_target" type="list" default="_self" label="Category Link Target"
+                       description="Open Category Link on ...">
+                    <option value="_self">Same Window</option>
+                    <option value="_blank">New Window</option>
+                    <option value="_windowopen">Popup Windsow</option>
+                </field>
+            </fieldset>
+            <fieldset name="IMAGE_OPTIONS_LABEL" label="IMAGE_OPTIONS_LABEL">
+                <field name="item_thumbnail_width" type="text" default="220" label="Thumbnail Width"
+                       description="The width of thumbnail image. The module will auto resize your image to your width."/>
+                <field name="item_thumbnail_height" type="text" default="125" label="Thumbnail Height"
+                       description="The height of thumbnail image. The module will auto resize your image to your height."/>
+                <field name="item_thumbnail_background" type="text" default="#FFFFFF" label="Thumbnail Background Color"
+                       description="The default background of thumbnail image."/>
+                <field name="item_thumbnail_mode" default="stretch" type="list" label="RESIZE_MODE_LABEL"
+                       description="RESIZE_MODE_DESC">
+
+                    <option value="center">Center</option>
+                    <option value="fill">Fill</option>
+                    <option value="fit">Fit</option>
+                    <option value="stretch">Stretch</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="MODULECLASS_SFX_LABEL"
+                        description="MODULECLASS_SFX_DESC"/>
+                <field name="include_jquery" type="radio" class="btn-group" default="0"
+                       label="INCLUDE_JQUERY_LABEL" description="INCLUDE_JQUERY_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="introtext" type="textarea" default="" label="Intro text" description="Intro text of module"
+                       cols="40" rows="4" filter="raw"/>
+                <field name="footertext" type="textarea" default="" label="Footer text"
+                       description="Footer text of module" cols="40" rows="4" filter="raw"/>
+                <field name="owncache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

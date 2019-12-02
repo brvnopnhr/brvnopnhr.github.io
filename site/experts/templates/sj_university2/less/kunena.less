@@ -1,0 +1,141 @@
+#bd{
+#content.com_kunena  #yt_component{padding:0;border:none;background:none;}
+#Kunena {
+    //top
+    #ktop {
+            border: none;
+            background: #3f444e;
+            #ktopmenu {
+                #ktab {margin: 0;
+                    .menu {
+                        li {
+                            margin: 0 !important;
+                            a {
+                                background: none;
+                                color:#fff;
+                                padding: 8px 10px;
+                                border-radius: 0;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                                border-right: 1px solid #fff;
+                            }
+                        &.active {
+                            a {background: @background1;}
+                        }
+                        &:hover {
+                            a {background: @background1;}
+                        }
+                        &:last-child{a{border: none;}}
+                    }
+                }
+            }
+        }
+        span.ktoggler {
+            background: none;
+            margin: -32px 15px;
+            padding: 2px;
+        }
+    }
+    .kblock {
+        background-color: #fff;
+        margin: 0 0 30px;
+        &.kadvsearch, &.kfrontstats{margin: 0;}
+        &.kpathway{margin: 0;}
+        .kheader {
+            background: @background1;
+            color: #fff;
+            h2 { 
+                .ktitle, span {color: #fff;}
+                a { color: #fff !important;}
+            }
+            h3 span {color: #fff;}
+            .ktitle-desc {color: #fff;}
+        }
+        .kcontainer {
+            .kbody {
+                .kblocktable {
+                    .krow2 {
+                        td {
+                            background: #fff;
+                            &.km {
+                                > div {border: none; border-bottom: #ccc 1px dotted;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .klist-markallcatsread{background: #fff;margin: 0 0 30px;}
+    //table
+    tr.krow1 td{
+        background: #fff;
+        border: 1px solid #ebebeb !important;
+        .k_guest{
+            font-size: 14px;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 20px 0;
+            b{color: @linkColor;}
+        }
+        div.input{
+            margin: 0 0 20px;
+            span{
+                margin-right: 20px;
+                .inputbox{
+                    margin: 0 10px;
+                    padding: 10px 20px;
+                    background: #ccc;
+                    &:focus{background: #fff;}
+                }
+                .kbutton{
+                    margin: 0 10px;
+                    padding: 8px 20px;
+                    background: #3f444e;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    &:hover{
+                        background: @background1;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .klink-block{
+            padding: 15px 0;
+            span{
+                margin: 0 10px;
+                a{
+                    color: #666;
+                    &:hover{color: @linkColor;}
+                }
+            }
+        }
+        
+    }
+}
+#Kunena td.kprofileboxcnt ul.kprofilebox-welcome li input.kbutton:hover {background-color: rgba(0,0,0,0.15);}
+
+    &.rtl{
+        #Kunena{
+            tr.krow1 td div.input{
+                display: block;
+                overflow: hidden;
+                span{float: right;}
+            }
+            .fltlft{float: right;}
+            .fltrt{float: left;}
+            #ktop span.ktoggler{float: left;}
+            .ktitle, a.ktitle{float: right;}
+            td.kprofileboxcnt{text-align: right;}
+            div.kthead-title a{float: none}
+            h1,h2{text-align: right;}
+            div.kblock span.ktoggler{float: left;top: 7px;}
+            table.kblocktable{text-align: right;}
+            td.kcol-kcatlastpost{text-align: right}
+        }
+        
+    }
+}

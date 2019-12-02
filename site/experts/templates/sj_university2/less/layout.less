@@ -1,0 +1,229 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* Layouts Templates *-----------------
+// ----------------------------------------
+/*   1.Block Header
+ *   2.Block Mainmenu
+ *   3.Block Slideshow
+ *   4.Block Breadcrumb
+ *   5.Block Main Content
+ *   6.Block Spotlight
+ *   7.Block Footer
+ *   8.Non-responsive
+ */
+
+
+body{line-height: 22px;background-color: #f6f6f6; color: @gray; font-size: 13px;}
+
+
+//1.Block Header
+#yt_header{padding: 0;
+     background: #3f444e;
+     #top2{text-align: right;}
+     #top1{position: relative;
+          &:before{
+               content: "";
+               height: 100%;
+               width: 100%;
+               position: absolute;
+               left: 0;
+               top: 0;
+               background: #3f444e;
+               z-index: 999;
+          }
+     }
+     .menu{
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          
+          >li{
+               list-style: none;
+               display: inline-block;
+               position: relative;
+               height: 50px;
+               line-height: 50px;
+               
+               a{
+                    padding: 0 10px;
+                    display: block;
+                    font-size: 13px;
+                    color: #ccc;
+                    position: relative;
+                    z-index: 9999;
+                    &:hover{color: #fff;}
+               }
+               &:last-child{
+                    padding-right: 10px;
+                    border-right: 1px solid #32363e;
+               }
+               ul.yt-list{position: absolute;top: -100%;left: 0;z-index: 99;min-width: 120px;background: #3f444e;padding: 0;margin: 0;transition: top 0.3s ease-out;
+                    li{display: block;padding: 5px 10px;white-space: nowrap;list-style: none;height: auto;line-height: 22px;
+                         a{color: #ccc;display: inline-block;}
+                         &:hover{
+                              background: #666;
+                              a{color: #fff;}
+                         }
+                    }
+               }
+               &:hover{
+                    ul{top: 100%;transition: top 0.3s ease-out;}
+               }
+          }
+     }
+}
+    
+
+//2.Block Mainmenu
+#yt_menuwrap{background: #fff; ;margin: 0;position: relative;z-index: 98;
+     #yt_logo{height: 100px;line-height: 100px;position: relative;z-index: 2;}
+
+}
+#yt_menuwrap.menu-fixed{width: 100%;margin: 0;position: fixed;top: 0;left: 0;z-index: 9999;background: none;
+     &:before{
+          content: "";
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          position: absolute;
+          background: #eee;
+          opacity: 0.9;
+          z-index: 1;
+     }
+}
+
+//3.Block yt_spotlight
+#yt_spotlight1{
+     display: block;
+	 position: relative;
+	 z-index:1;
+     .container{
+          padding: 0;
+          width: 100%;
+          overflow: hidden;
+     }
+}
+
+#yt_spotlight2{
+     display: block;
+	 position: relative;
+	 z-index:1;
+     background: url("../images/bg/bg-1.jpg") no-repeat 0 0 ;
+     padding: 0 0 50px;
+     margin: 0 0 40px;
+     background-size: 100% 100%;
+}
+#yt_spotlight3{
+    display: block;
+	 position: relative;
+	 z-index:1;
+}
+#yt_spotlight4{
+     display: block;
+	 position: relative;
+	 z-index:1;
+     background: url(../images/bg/bg-2.jpg) no-repeat 0 0 fixed;
+     padding: 45px 0 50px;
+     margin: 0;
+     background-size: 100% 100%;
+}
+#yt_spotlight5{
+	display: block;
+	 position: relative;
+	 z-index:1;
+     .module{
+          margin-bottom: 0;
+          padding-top: 45px;
+     }
+}
+#yt_spotlight8{
+     background: #17191e;
+     padding: 40px 0;
+	 display: block;
+	 position: relative;
+	 z-index:1;
+     .module{
+          h3.modtitle{
+               font-size: 13px;
+               color: #fff;
+               font-weight: bold;
+               position: relative;
+               margin: 0;
+               padding: 15px 0;
+               &:before{
+                   content: "";
+                   height: 3px;
+                   width: 30px;
+                   background: @background1;
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+               }
+          }
+     }
+}
+#yt_spotlight6{
+     .container{width: 100%;padding: 0;overflow: hidden;}
+     .module{margin-bottom: 0;}
+	 display: block;
+	 position: relative;
+	 z-index:1;
+}
+#yt_spotlight7{
+     background: #3f444e;
+     padding: 20px 0;
+     .module{margin-bottom: 0;}
+	 display: block;
+	 position: relative;
+	 z-index:1;
+}
+//4.Block Breadcrumb
+#yt_breadcrumb{background: #e5e5e5;padding: 10px 0;margin-bottom: 30px;
+     #breadcrumb{
+          .module{margin-bottom: 0}
+          .breadcrumb{margin: 0;padding: 0;background: none;
+               a{
+                    .linkGray(); //Extend Mixins linkGray utilities.less
+               }
+               .divider{margin: 0 10px;}
+               > li + li:before{display: none;}
+               > li{font-size: 12px;
+                    &.active{color: @linkColor;}
+               }
+          }
+     }
+}
+//5.Block Main Content
+#content{
+     #yt_component{background: @white;margin-bottom: 30px;clear: both;}
+     #right .bg1 {padding-bottom: 0px;}
+     #mainbottom1{clear: both;}
+	 display: block;
+	 position: relative;
+	 z-index:1;
+}
+
+//6.Block Spotlight 
+
+//7.Block Footer
+#yt_footer{background: #0d0e11;padding: 20px 0px;text-align: center;
+     #yt_copyright {color: #999;
+          a {color: @linkColor;
+               &:hover{
+                    color: @linkColor2; //Extend Mixins linkGray utilities.less
+               }
+          }
+          .yt-logo{margin: 5px 15px 0 0;float: left;}
+          .copyright,.designby{display: inline;color: #999;}
+          .copyright_middle{display: inline-block;}
+          .powered-by{display: inline-block;}
+     }
+    
+}
+
+//8.Non-responsive Bootstrap
+@media  (max-width: 1024px) {.no-res{width: 1190px; }}

@@ -1,0 +1,6 @@
+﻿1. Bị mất một số thuộc tính code k2 template
+2. tạo button remove mootool
+
+24/2:
+3.Front-end Module Editing
+

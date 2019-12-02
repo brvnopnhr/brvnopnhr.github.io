@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter" addfieldpath="administrator/components/com_abook/models/fields">
+		<field
+			name="search"
+			type="text"
+			label="COM_CONTENT_FILTER_SEARCH_DESC"
+			hint="JSEARCH_FILTER"
+		/>
+		<field
+                        name="state"
+                        type="list"
+                        label="JSTATUS"
+                        description="COM_CONTENT_FILTER_PUBLISHED_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">JOPTION_SELECT_PUBLISHED</option>
+                        <option value="0">COM_ABOOK_LEND</option>
+			<option value="1">COM_ABOOK_RETURN</option>
+                        <option value="2">COM_ABOOK_REQUEST</option>
+			<option value="*">JALL</option>
+                </field>
+		<field
+                        name="library_id"
+                        type="libraries"
+			label="COM_ABOOK_LIBRARY"
+                        description="COM_ABOOK_LIBRARY_DESC"
+                        onchange="this.form.submit();"
+                        >
+                </field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_CONTENT_LIST_FULL_ORDERING"
+			description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="a.state DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="a.ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="a.ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="a.state ASC">JSTATUS_ASC</option>
+			<option value="a.state DESC">JSTATUS_DESC</option>
+			<option value="b.title ASC">JGLOBAL_TITLE_ASC</option>
+			<option value="b.title DESC">JGLOBAL_TITLE_DESC</option>
+			<option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+			<option value="b.idlibrary ASC">COM_ABOOK_LIBRARY_ASC</option>
+                        <option value="b.idlibrary DESC">COM_ABOOK_LIBRARY_DESC</option>
+			<option value="b.catalogo ASC">COM_ABOOK_CATALOG_ASC</option>
+                        <option value="b.catalogo DESC">COM_ABOOK_CATALOG_DESC</option>
+			<option value="u.name ASC">COM_ABOOK_USERNAME_ASC</option>
+                        <option value="u.name DESC">COM_ABOOK_USERNAME_DESC</option>
+			<option value="a.lend_out ASC">COM_ABOOK_LEND_OUT_ASC</option>
+                        <option value="a.lend_out DESC">COM_ABOOK_LEND_OUT_DESC</option>
+			<option value="a.lend_in ASC">COM_ABOOK_LEND_IN_ASC</option>
+                        <option value="a.lend_in DESC">COM_ABOOK_LEND_IN_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

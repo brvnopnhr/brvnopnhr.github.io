@@ -1,0 +1,190 @@
+.theme2_menu_left ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.theme2_menu_left{
+	background: url(../images/theme2_vertical_seprate_menu.png) repeat-y scroll 130px top transparent;
+    float: left;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 192px;
+}
+
+.theme2_root_li{
+	/*position: relative;*/
+	text-transform: uppercase;
+	color: #135cae;
+	width: 100%;
+	padding: 0;
+	background: none;
+}
+.theme2_img_li_root{
+	display: block;
+    float: left;
+    margin-left: 8px;
+    margin-top: 9px;
+}
+/*Dung 1 trong 2 kieu
+.theme2_root_li :hover .theme2_img_li_root{*/
+li.selected .theme2_img_li_root{
+	display: none;
+}
+
+.theme2_img_li_root_active{
+	display: none;
+	float: left;
+    margin-left: 8px;
+    margin-top: 9px;
+}
+/*dung 1 trong 2 kieu
+.theme2_root_li :hover .theme2_img_li_root_active{*/
+li.selected .theme2_img_li_root_active{
+	display: block;
+}
+
+.theme2_root_li a{
+	color: #135cae;
+	text-decoration: none;
+}
+.theme2_menu_root{
+	width: 130%;
+	background: none;
+}
+/*
+.theme2_root_li :hover .theme2_menu_root{
+	background: url(../images/theme2_tab_selected.png) no-repeat left top;
+}
+*/
+.theme2_menu_root_title{
+	margin-top: 8px;
+	margin-left: 20px;
+	padding-top: 2px;
+	height: 26px;
+	white-space: nowrap;
+}
+.theme2_root_li :hover .theme2_menu_root_title{
+	color: #ff9000 !important;
+}
+
+.theme2_menu_lev1{
+	width: 100%;
+}
+.theme2_wrap_menu_lev1{
+	padding-left: 12px;
+}
+.theme2_menu_li_lev1{
+	background: none;
+	padding-left: 0px;
+	text-transform: none;
+	/*position: relative;*/
+}
+.theme2_menu_li_lev1 a{
+	text-decoration: none;
+}
+li.theme2_menu_li_lev1 :hover{
+	color: #ff9000;
+}
+
+.theme2_img_li_lev1{
+	display: block;
+	float: left;
+	margin-top: 7px;
+}
+
+.theme2_menu_li_lev1 :hover .theme2_img_li_lev1{
+	display: none;
+}
+
+.theme2_img_li_lev1_active{
+	display: none;
+	margin-top: 7px;
+	float: left;
+}
+.theme2_menu_li_lev1 :hover .theme2_img_li_lev1_active{
+	display: block;
+}
+.theme2_menu_lev1_title{
+	margin-top: 5px;
+	margin-left: 8px;
+	color: black;
+	white-space: nowrap;
+}
+.theme2_menu_li_lev1 :hover .theme2_menu_lev1_title{
+	color: #ff9000;
+}
+.theme2_menu_li_lev1 :hover .theme2_menu_root_title{
+	color: #ff9000;
+}
+/* Doan nay de chinh font color cua LI cha*/
+li.selected div.theme2_menu_root_title{
+	color: #ff9000 ;
+}
+li.selected .theme2_menu_root{
+	background: url(../images/theme2_tab_selected.png) no-repeat left top;
+}
+
+.theme2_wrap_menu_lev2{
+	position: absolute;
+	z-index: 100;
+	margin-left: 150px;
+	/*top: 0px;*/
+	width: 130px;
+	display: none;
+	z-index: 100;
+}
+li.theme2_menu_li_lev1:hover .theme2_wrap_menu_lev2{
+	display: block;
+}
+
+.theme2_level2_li{
+	background: none;
+	width: 135px;
+	height: 26px;
+	float: left;
+	text-transform: none;
+	padding-left: 10px;
+	position: relative;
+}
+.theme2_level2_li:hover .theme2_menu_lev2_bg{
+	background: url(../images/theme2_bg_tooltip_lev2_hover.png);
+}
+.theme2_menu_lev2_bg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 26px;
+	width: 100%;
+	background: url(../images/theme2_bg_tooltip_lev2.png);
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	z-index: -1;
+}
+.theme2_img_li_lev2{
+	display: block;
+	float: left;
+	margin-top: 7px;
+}
+.theme2_level2_li:hover .theme2_menu_lev2_title{
+	color: #FFF;
+}
+.theme2_menu_lev2_title{
+	float: left;
+	margin-left: 8px;
+	color: #fff;
+	width: 80%;
+}
+.theme2_image_categories_wrap{
+	border: 2px solid #FFFFFF;
+    float: left;
+    /*margin-left: 185px;*/
+    overflow: hidden;
+    /* position: absolute; */
+    z-index: -1;
+}
+.theme2_image_categories_section{
+	width: 100%;
+	height: 100%;
+	background: red;
+}

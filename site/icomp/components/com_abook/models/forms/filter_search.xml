@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter" addfieldpath="components/com_abook/models/fields">
+		<field
+			name="search"
+			type="text"
+			label="COM_ABOOK_KEYWORD_DESC"
+			hint="COM_ABOOK_KEYWORD"
+		/>
+		<field
+			name="category_id"
+			type="categoryparent"
+			label="JOPTION_FILTER_CATEGORY"
+			extension="com_abook"
+			description="JOPTION_FILTER_CATEGORY_DESC"
+			onchange="this.form.submit();"
+			show_root="false"
+			>
+			<option value="">COM_ABOOK_SELECT_A_CATEGORY</option>
+		</field>
+		<field
+			name="author_id"
+			type="authors"
+			label="COM_CONTENT_FILTER_AUTHOR"
+			description="COM_CONTENT_FILTER_AUTHOR_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_ABOOK_SELECT_AN_AUTHOR</option>
+		</field>
+		<field
+                        name="editor_id"
+                        type="editors"
+                        label="COM_CONTENT_FILTER_EDITOR"
+                        description="COM_CONTENT_FILTER_EDITOR_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">COM_ABOOK_SELECT_AN_EDITOR</option>
+                </field>
+		<field
+                        name="tag_id"
+                        type="tags"
+                        label="COM_ABOOK_TAG"
+                        description="COM_ABOOK_FILTER_TAG_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">COM_ABOOK_SELECT_A_TAG</option>
+                </field>
+		<field
+                        name="location_id"
+                        type="locations"
+                        label="COM_ABOOK_LOCATION"
+                        description="COM_ABOOK_FILTER_LOCATION_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">COM_ABOOK_SELECT_A_LOCATION</option>
+                </field>
+		<field
+                        name="library_id"
+                        type="libraries"
+                        label="COM_ABOOK_LIBRARY"
+                        description="COM_ABOOK_FILTER_LIBRARY_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">COM_ABOOK_SELECT_A_LIBRARY</option>
+                </field>
+		<field
+                        name="year"
+                        type="year"
+                        label="COM_ABOOK_YEAR"
+                        description="COM_ABOOK_FILTER_YEAR_DESC"
+                        onchange="this.form.submit();"
+                        >
+                        <option value="">COM_ABOOK_SELECT_AN_YEAR</option>
+                </field>
+	</fields>
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="10"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>
